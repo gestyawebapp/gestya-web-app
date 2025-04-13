@@ -1,27 +1,41 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Colors */
+  --blue-900: #004e98;
+  --blue-800: #0981c4;
+  --blue-400: #0cc8e9;
+  --blue-100: #e7fafe;
+  --gray-900: #333333;
+  --gray-600: #606266;
+  --gray-300: #efefef;
+  --gray-100: #f5f7fa;
+  --green-900: #17a693;
+  --green-600: #61b356;
+  --green-100: #eff7ed;
+  --orange-900: #ec8c1f;
+  --orange-600: #eda350;
+  --orange-100: #fdf3e8;
+  --purple-900: #312780;
+  --red-600: #ed5550;
+  --red-100: #fde9e8;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Font sizes */
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 40px;
+  --font-size-5xl: 48px;
+  --font-size-6xl: 68px;
+  --font-size-7xl: 98px;
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
 }
 
 * {
@@ -30,13 +44,56 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.button-primary,
+.button-secondary,
+.button-info {
+  border-radius: 0.25rem;
+  color: var(--gray-300);
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  max-width: fit-content;
+  padding: 1em 2.25em;
+}
+
+.button-primary:disabled,
+.button-secondary:disabled {
+  background-color: var(--gray-600);
+}
+
+.button-primary {
+  background-color: var(--purple-900);
+}
+
+.button-primary:hover {
+  background-color: var(--blue-900);
+}
+
+.button-secondary {
+  border: var(--blue-900) 1px solid;
+  color: var(--blue-900);
+}
+
+.button-secondary:hover {
+  border: var(--orange-900) 1px solid;
+  color: var(--orange-900);
+}
+
+.button-info {
+  background-color: var(--blue-800);
+  padding: 0.75em 1.75em;
+}
+
+.button-info:hover {
+  background-color: var(--orange-900);
 }
