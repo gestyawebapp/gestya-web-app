@@ -4,7 +4,7 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1450px;
-  padding: 5rem 0.75rem;
+  padding: 7.5rem 0.75rem;
 }
 
 .header {
@@ -54,7 +54,10 @@
 .cards {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(300px, 100%), 1fr)
+  ); /* La función min() aplica el menor valor de los 2 que se le pasan, es para evitar overflow por debajo de 300px */
   justify-items: center;
   padding-top: 3.75rem;
   width: 100%;
@@ -73,6 +76,7 @@
 }
 
 .card h3 {
+  font-size: var(--font-size-lg);
   margin: 2rem 0 1rem 0;
 }
 

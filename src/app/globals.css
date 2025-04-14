@@ -57,22 +57,23 @@ a {
 
 .button-primary,
 .button-secondary,
-.button-info {
+.button-info,
+.button-functionality {
   border-radius: 0.25rem;
-  color: var(--gray-300);
   cursor: pointer;
   font-weight: var(--font-weight-bold);
   max-width: fit-content;
   padding: 1em 2.25em;
 }
 
-.button-primary:disabled,
+/* .button-primary:disabled,
 .button-secondary:disabled {
   background-color: var(--gray-600);
-}
+} */
 
 .button-primary {
   background-color: var(--purple-900);
+  color: var(--gray-300);
 }
 
 .button-primary:hover {
@@ -91,9 +92,45 @@ a {
 
 .button-info {
   background-color: var(--blue-800);
+  color: var(--gray-300);
   padding: 0.75em 1.75em;
 }
 
 .button-info:hover {
   background-color: var(--orange-900);
+}
+
+.button-functionality {
+  border: 0;
+  color: var(--gray-600);
+  font-size: var(--font-size-md);
+  padding: 0.5em 0.75em;
+}
+
+.button-functionality:not(.active).vehicles:hover {
+  outline: var(--orange-600) 2px solid;
+}
+
+.button-functionality:not(.active).fuel:hover {
+  outline: var(--red-600) 2px solid;
+}
+
+.button-functionality:not(.active).control:hover {
+  outline: var(--green-900) 2px solid;
+}
+
+.button-functionality.active {
+  color: #ffffff;
+}
+
+.button-functionality.vehicles.active {
+  background-color: var(--orange-600);
+}
+
+.button-functionality.fuel.active {
+  background-color: var(--red-600);
+}
+
+.button-functionality.control.active {
+  background-color: var(--green-900);
 }

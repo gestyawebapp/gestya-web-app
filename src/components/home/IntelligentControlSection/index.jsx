@@ -54,7 +54,7 @@ const IntelligentControlSection = () => {
       <div className={styles.cards}>
         <div className={styles.card}>
           <Image
-            src={"/images/home/seguimiento.png"}
+            src={"/images/home/icono-seguimiento.png"}
             width={50}
             height={50}
             alt="Ícono de seguimiento"
@@ -67,7 +67,7 @@ const IntelligentControlSection = () => {
         </div>
         <div className={styles.card}>
           <Image
-            src={"/images/home/combustible.png"}
+            src={"/images/home/icono-combustible.png"}
             width={50}
             height={50}
             alt="Ícono de combustible"
@@ -80,7 +80,7 @@ const IntelligentControlSection = () => {
         </div>
         <div className={styles.card}>
           <Image
-            src={"/images/home/control.png"}
+            src={"/images/home/icono-control.png"}
             width={50}
             height={50}
             alt="Ícono de control (una lupa)"
@@ -93,7 +93,7 @@ const IntelligentControlSection = () => {
         </div>
         <div className={styles.card}>
           <Image
-            src={"/images/home/logistica.png"}
+            src={"/images/home/icono-logistica.png"}
             width={50}
             height={50}
             alt="Ícono de logística (un camión)"
@@ -106,7 +106,7 @@ const IntelligentControlSection = () => {
         </div>
         <div className={styles.card}>
           <Image
-            src={"/images/home/conectividad.png"}
+            src={"/images/home/icono-conectividad.png"}
             width={50}
             height={50}
             alt="Ícono de conectividad"
@@ -119,7 +119,7 @@ const IntelligentControlSection = () => {
         </div>
         <div className={styles.card}>
           <Image
-            src={"/images/home/integracion.png"}
+            src={"/images/home/icono-integracion.png"}
             width={50}
             height={50}
             alt="Ícono de integración"
