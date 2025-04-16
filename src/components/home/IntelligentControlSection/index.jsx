@@ -1,7 +1,7 @@
 import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
-import Image from "next/image";
 import Link from "next/link";
+import CardsContainer from "./CardsContainer";
 
 const IntelligentControlSection = () => {
   const common = {
@@ -51,86 +51,7 @@ const IntelligentControlSection = () => {
           <img {...rest} alt={rest.alt} />
         </picture>
       </div>
-      <div className={styles.cards}>
-        <div className={styles.card}>
-          <Image
-            src={"/images/home/icono-seguimiento.png"}
-            width={50}
-            height={50}
-            alt="Ícono de seguimiento"
-          />
-          <h3>Seguimiento</h3>
-          <p>
-            Visualizá los recorridos en tiempo real con monitoreo de flotas ágil
-            y eficiente.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image
-            src={"/images/home/icono-combustible.png"}
-            width={50}
-            height={50}
-            alt="Ícono de combustible"
-          />
-          <h3>Combustible</h3>
-          <p>
-            Supervisá el consumo durante cargas y traslados para ahorro de
-            combustible.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image
-            src={"/images/home/icono-control.png"}
-            width={50}
-            height={50}
-            alt="Ícono de control (una lupa)"
-          />
-          <h3>Control</h3>
-          <p>
-            Accedé a información destacada para mantenimiento preventivo y
-            mejorar la seguridad.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image
-            src={"/images/home/icono-logistica.png"}
-            width={50}
-            height={50}
-            alt="Ícono de logística (un camión)"
-          />
-          <h3>Logística</h3>
-          <p>
-            Optimizá tiempos y recursos durante entregas o tareas con un control
-            de flotas integral.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image
-            src={"/images/home/icono-conectividad.png"}
-            width={50}
-            height={50}
-            alt="Ícono de conectividad"
-          />
-          <h3>Conectividad</h3>
-          <p>
-            Gestioná con una aplicación móvil y recibí reportes incluso desde
-            áreas remotas.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <Image
-            src={"/images/home/icono-integracion.png"}
-            width={50}
-            height={50}
-            alt="Ícono de integración"
-          />
-          <h3>Integración</h3>
-          <p>
-            Vinculá con VIGIA Protector de Motor, Calibrador de Neumáticos y
-            Monitor de Presión VITRAN.
-          </p>
-        </div>
-      </div>
+      <CardsContainer />
     </section>
   );
 };

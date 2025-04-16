@@ -18,7 +18,7 @@
 
 .section h1 {
   font-size: var(--font-size-5xl);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semi-bold);
   margin-bottom: 2.5rem;
 }
 
@@ -49,6 +49,6 @@
 @media (min-width: 576px) {
   .imageWrapper {
     aspect-ratio: 3 / 1;
-    max-width: 1400px;
+    max-width: var(--max-container-width);
   }
 }

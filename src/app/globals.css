@@ -17,6 +17,7 @@
   --purple-900: #312780;
   --red-600: #ed5550;
   --red-100: #fde9e8;
+  --yellow-900: #fadc0a;
 
   /* Font sizes */
   --font-size-xs: 14px;
@@ -34,8 +35,15 @@
   /* Weights */
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-medium: 600;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
+
+  /* Max width for sections */
+  --max-container-width: 1400px;
+
+  /* Vertical padding for sections */
+  --vertical-container-padding: 7.5rem;
 }
 
 * {
@@ -64,6 +72,7 @@ a {
   font-weight: var(--font-weight-bold);
   max-width: fit-content;
   padding: 1em 2.25em;
+  text-align: center;
 }
 
 /* .button-primary:disabled,
@@ -107,15 +116,15 @@ a {
   padding: 0.5em 0.75em;
 }
 
-.button-functionality:not(.active).vehicles:hover {
+.button-functionality:not(.active).orange:hover {
   outline: var(--orange-600) 2px solid;
 }
 
-.button-functionality:not(.active).fuel:hover {
+.button-functionality:not(.active).red:hover {
   outline: var(--red-600) 2px solid;
 }
 
-.button-functionality:not(.active).control:hover {
+.button-functionality:not(.active).green:hover {
   outline: var(--green-900) 2px solid;
 }
 
@@ -123,14 +132,14 @@ a {
   color: #ffffff;
 }
 
-.button-functionality.vehicles.active {
+.button-functionality.orange.active {
   background-color: var(--orange-600);
 }
 
-.button-functionality.fuel.active {
+.button-functionality.red.active {
   background-color: var(--red-600);
 }
 
-.button-functionality.control.active {
+.button-functionality.green.active {
   background-color: var(--green-900);
 }

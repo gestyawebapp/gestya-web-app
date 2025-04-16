@@ -34,7 +34,7 @@ const FunctionalitiesSection = () => {
         </p>
         <div className={styles.buttonWrapper}>
           <button
-            className={`button-functionality vehicles ${
+            className={`button-functionality orange ${
               activeKey === "vehicles" ? "active" : ""
             }`}
             onClick={() => setActiveKey("vehicles")}
@@ -42,7 +42,7 @@ const FunctionalitiesSection = () => {
             Seguimiento de Vehículos
           </button>
           <button
-            className={`button-functionality fuel ${
+            className={`button-functionality red ${
               activeKey === "fuel" ? "active" : ""
             }`}
             onClick={() => setActiveKey("fuel")}
@@ -50,7 +50,7 @@ const FunctionalitiesSection = () => {
             Ahorro de combustible
           </button>
           <button
-            className={`button-functionality control ${
+            className={`button-functionality green ${
               activeKey === "control" ? "active" : ""
             }`}
             onClick={() => setActiveKey("control")}

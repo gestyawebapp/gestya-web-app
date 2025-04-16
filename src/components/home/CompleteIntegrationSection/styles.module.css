@@ -1,0 +1,167 @@
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--max-container-width);
+  padding: 0 0.75rem var(--vertical-container-padding) 0.75rem;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header .wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+}
+
+.header h2 {
+  font-size: var(--font-size-4xl);
+  max-width: 460px;
+}
+
+.header h2 span {
+  color: var(--orange-900);
+}
+
+.header p {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  margin: 1.5rem 0;
+}
+
+.header p span {
+  color: var(--blue-900);
+}
+
+.imageWrapper {
+  display: flex;
+  margin: 2rem 0;
+  max-width: 365px;
+  width: 100%;
+}
+
+.imageWrapper img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(275px, 100%), 1fr)
+  ); /* La función min() aplica el menor valor de los 2 que se le pasan, es para evitar overflow por debajo de 300px */
+  justify-items: center;
+  max-width: 400px;
+  padding: 3.75rem 0;
+  width: 100%;
+}
+
+.card {
+  align-items: center;
+  background-color: var(--gray-100);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.cardWrapper > span {
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  max-width: fit-content;
+  padding: 0.25em;
+}
+
+.cardWrapper > span.green {
+  background-color: var(--green-600);
+}
+
+.cardWrapper > span.blue {
+  background-color: var(--blue-400);
+}
+
+.cardWrapper h3 {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  margin: 1.5rem 0;
+  max-width: 225px;
+}
+
+.cardWrapper h3.small {
+  max-width: 200px;
+}
+
+.cardWrapper p {
+  line-height: 150%;
+}
+
+.cardWrapper a {
+  margin-top: 1.5rem;
+}
+
+.section > a {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 0 3.75rem var(--vertical-container-padding) 3.75rem;
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .imageWrapper {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header .wrapper {
+    max-width: 700px;
+  }
+
+  .header h2 {
+    max-width: 460px;
+  }
+
+  .cards {
+    max-width: none;
+  }
+
+  .cardWrapper a {
+    margin-top: auto;
+  }
+
+  .section > a {
+    margin: 0;
+    max-width: fit-content;
+  }
+}

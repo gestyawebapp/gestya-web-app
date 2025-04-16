@@ -1,0 +1,4 @@
+.section {
+  background-color: var(--gray-100);
+  min-height: 750px;
+}
