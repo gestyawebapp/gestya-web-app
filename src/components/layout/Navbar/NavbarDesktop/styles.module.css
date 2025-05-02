@@ -1,0 +1,170 @@
+.navbar {
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navItem {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.navLink {
+  align-items: center;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  height: 100%;
+  line-height: normal;
+  padding: 0.25rem;
+  position: relative;
+}
+
+.navbar .small {
+  padding: 0.5em 0.75em;
+}
+
+.submenu {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(300px, 100%), 1fr)
+  ); /* La función min() aplica el menor valor de los 2 que se le pasan, es para evitar overflow por debajo de 300px */
+  justify-items: center;
+  left: 0;
+  list-style: none;
+  padding: 2.5rem;
+  position: absolute;
+  top: calc(
+    100% + var(--vertical-offset-navbar-link) + var(--navbar-vertical-padding)
+  );
+  z-index: 1000;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 225px;
+}
+
+.column a {
+  display: block;
+  padding-block: 0;
+}
+
+.column a span {
+  position: relative;
+}
+
+.column a span::after {
+  background-color: var(--blue-800);
+  border-radius: 40px;
+  bottom: -7.5px;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.15s;
+  width: 100%;
+}
+
+.column a:hover span::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.column h4 {
+  font-size: var(--font-size-xs);
+  margin-bottom: 0.5rem;
+}
+
+.column span {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.column.functionalities:first-of-type h4 {
+  color: var(--orange-900);
+}
+
+.column.functionalities:nth-of-type(2) h4 {
+  color: var(--red-600);
+}
+
+.column.functionalities:nth-of-type(3) h4 {
+  color: var(--green-600);
+}
+
+.column.integrations:first-of-type h4 {
+  color: var(--yellow-900);
+}
+
+.column.integrations:nth-of-type(2) h4 {
+  color: var(--green-300);
+}
+
+.hasSubmenu:hover .submenu,
+.hasSubmenu:focus-within .submenu {
+  display: flex;
+}
+
+.navItem.hasSubmenu .navLink {
+  padding: 0;
+}
+
+.navItem:not(.hasSubmenu)::after {
+  background-color: var(--orange-900);
+  border-radius: 40px;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.15s;
+  width: 100%;
+}
+
+.navItem:not(.hasSubmenu):hover::after,
+.navItem:not(.hasSubmenu).active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.submenuMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    align-items: center;
+    display: flex;
+    gap: 2.75rem;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .navbar ul {
+    gap: 1.5rem;
+  }
+}

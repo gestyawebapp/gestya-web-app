@@ -15,14 +15,14 @@ export const vehicleCards = [
     img: "/images/home/logistica.jpg",
     alt: "",
   },
-  {
-    title: "Distancia recorrida",
-    description:
-      "Revisá en gráficos los vehículos recorrieron más kilómetros y el consumo de combustible estimado por unidad",
-    href: "/",
-    img: "/images/home/distancia-recorrida.jpg",
-    alt: "",
-  },
+  // {
+  //   title: "Distancia recorrida",
+  //   description:
+  //     "Revisá en gráficos los vehículos recorrieron más kilómetros y el consumo de combustible estimado por unidad",
+  //   href: "/",
+  //   img: "/images/home/distancia-recorrida.jpg",
+  //   alt: "",
+  // },
   {
     title: "Planificación",
     description:
@@ -43,11 +43,11 @@ export const vehicleCards = [
 
 export const fuelCards = [
   {
-    title: "Level Control",
+    title: "Eco Drive",
     description:
-      "Accedé a los datos de consumo de combustible de tu flota directamente desde la ECU para un control preciso",
+      "Optimizá el mantenimiento y consumo de las unidades a través de una conducción eficiente",
     href: "/",
-    img: "/images/home/level-control.jpg",
+    img: "/images/home/eco-drive.jpg",
     alt: "",
   },
   {
@@ -59,11 +59,11 @@ export const fuelCards = [
     alt: "",
   },
   {
-    title: "Eco Drive",
+    title: "Level Control",
     description:
-      "Optimizá el mantenimiento y consumo de las unidades a través de una conducción eficiente",
+      "Accedé a los datos de consumo de combustible de tu flota directamente desde la ECU para un control preciso",
     href: "/",
-    img: "/images/home/eco-drive.jpg",
+    img: "/images/home/level-control.jpg",
     alt: "",
   },
 ];

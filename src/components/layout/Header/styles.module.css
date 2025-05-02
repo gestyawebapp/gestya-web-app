@@ -1,0 +1,6 @@
+.container {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100000; /* Me aseguro que siempre esté arriba de otros elementos */
+}

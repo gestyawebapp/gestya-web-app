@@ -48,12 +48,29 @@
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   gap: 1rem;
-  max-width: 1200px;
   padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .cards-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .cards-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  .cards-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .card {
@@ -107,3 +124,9 @@
     flex-direction: row;
   }
 }
+
+/* @media (min-width: 1370px) {
+  .cards {
+    max-width: none;
+  }
+} */

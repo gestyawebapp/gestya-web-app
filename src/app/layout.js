@@ -1,5 +1,6 @@
-import InfoBar from "@/components/layout/InfoBar";
-import Navbar from "@/components/layout/Navbar";
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -17,9 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className={inter.className}>
       <body>
-        <InfoBar />
-        <Navbar />
+        <Header />
         <main>{children}</main>
+        <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );

@@ -10,6 +10,7 @@
   --gray-100: #f5f7fa;
   --green-900: #17a693;
   --green-600: #61b356;
+  --green-300: #b4d32d;
   --green-100: #eff7ed;
   --orange-900: #ec8c1f;
   --orange-600: #eda350;
@@ -39,6 +40,16 @@
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
 
+  /* height for header (infobar + navbar */
+  --header-mobile-height: 70px;
+  --header-desktop-height: 125px;
+
+  /* Vertical padding for navbar */
+  --navbar-vertical-padding: 1rem;
+
+  /* Vertical offset for text-underline in navbar links */
+  --vertical-offset-navbar-link: 10px;
+
   /* Max width for sections */
   --max-container-width: 1400px;
 
@@ -62,6 +73,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+svg {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
 
 .button-primary,
 .button-secondary,
@@ -74,11 +92,6 @@ a {
   padding: 1em 2.25em;
   text-align: center;
 }
-
-/* .button-primary:disabled,
-.button-secondary:disabled {
-  background-color: var(--gray-600);
-} */
 
 .button-primary {
   background-color: var(--purple-900);
