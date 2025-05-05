@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown } from "@/components/icons/ChevronDown";
+import { ArrowRight } from "@/components/icons/ArrowRight";
 import { Hamburger } from "@/components/icons/Hamburger";
 import { Close } from "@/components/icons/Close";
 import { usePathname } from "next/navigation";
@@ -8,8 +9,6 @@ import styles from "./styles.module.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight } from "@/components/icons/ArrowRight";
-import InfoBar from "../../InfoBar";
 
 const NavbarMobile = () => {
   const pathname = usePathname();
@@ -27,6 +26,16 @@ const NavbarMobile = () => {
     setIsIntegrationsMenuOpen(
       menu === "integrations" ? !isIntegrationsMenuOpen : false
     );
+  };
+
+  const navbarAnimate = {
+    hidden: {
+      height: 0,
+      overflow: "hidden", // Necesario
+    },
+    open: {
+      height: "auto",
+    },
   };
 
   const subMenuAnimate = {
@@ -50,9 +59,12 @@ const NavbarMobile = () => {
       >
         {isNavbarOpen ? <Close size={20} filled /> : <Hamburger size={20} />}
       </button>
-      <div
+      <motion.div
         id="navbarMobile"
-        className={`${styles.navbar} ${isNavbarOpen ? styles.open : ""}`}
+        className={styles.navbar}
+        initial="hidden"
+        animate={isNavbarOpen ? "open" : "hidden"}
+        variants={navbarAnimate}
       >
         <ul className={styles.navList}>
           <li className={styles.navItem}>
@@ -292,7 +304,7 @@ const NavbarMobile = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };
