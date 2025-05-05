@@ -6,9 +6,9 @@ import MonitoringSection from "@/components/home/MonitoringSection";
 import TechnologySection from "@/components/home/TechnologySection";
 import LocationsSection from "@/components/home/LocationsSection";
 import SupportSection from "@/components/home/SupportSection";
+import PricingSection from "@/components/home/PricingSection";
 import HeroSection from "@/components/home/HeroSection";
 import FAQSection from "@/components/home/FAQSection";
-
 import styles from "./styles.module.css";
 
 export default function Home() {
@@ -24,6 +24,7 @@ export default function Home() {
       <LocationsSection />
       <SupportSection />
       <FAQSection />
+      <PricingSection />
     </main>
   );
 }

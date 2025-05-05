@@ -1,13 +1,32 @@
 "use client";
 
-// import { vehicleCards, fuelCards, controlCards } from "./cardsData";
-// import CardsContainer from "./CardsContainer";
+import QuestionsContainer from "./QuestionsContainer";
+import {
+  applicationQuestions,
+  clientQuestions,
+  installationQuestions,
+  usabilityQuestions,
+} from "./questionsData";
 import styles from "./styles.module.css";
 import { useState } from "react";
-import Link from "next/link";
 
 const FAQSection = () => {
   const [activeKey, setActiveKey] = useState("usabilidad");
+
+  const renderQuestions = () => {
+    switch (activeKey) {
+      case "usabilidad":
+        return usabilityQuestions;
+      case "instalacion":
+        return installationQuestions;
+      case "aplicacion":
+        return applicationQuestions;
+      case "clientes":
+        return clientQuestions;
+      default:
+        return [];
+    }
+  };
 
   return (
     <section className={styles.section}>
@@ -48,13 +67,14 @@ const FAQSection = () => {
           </button>
           <button
             className={`button-functionality orange ${
-              activeKey === "atencion" ? "active" : ""
+              activeKey === "clientes" ? "active" : ""
             }`}
-            onClick={() => setActiveKey("atencion")}
+            onClick={() => setActiveKey("clientes")}
           >
             Atención al cliente
           </button>
         </div>
+        <QuestionsContainer questions={renderQuestions()} />
       </div>
     </section>
   );
