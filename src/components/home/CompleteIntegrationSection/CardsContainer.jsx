@@ -23,7 +23,9 @@ const CardsContainer = () => {
         >
           <Image src={img} width={454} height={202} alt={alt} />
           <div className={styles.cardWrapper}>
-            <span className={styles.green}>{tag}</span>
+            <span className={tag == "VIGIA" ? styles.yellow : styles.green}>
+              {tag}
+            </span>
             <h3>{title} </h3>
             <p>{description}</p>
             <Link href={href} className="button-info">

@@ -54,9 +54,6 @@ const Footer = () => {
         <div className={styles.footerLinks}>
           <ul>
             <li>
-              <Link href={"#"}>GESTYA</Link>
-            </li>
-            <li>
               <Link href={"#"}>Funcionalidades</Link>
             </li>
             <li>
@@ -66,10 +63,10 @@ const Footer = () => {
               <Link href={"#"}>Servicios Oficiales</Link>
             </li>
             <li>
-              <Link href={"#"}>Soluciones</Link>
+              <Link href={"#"}>COLVEN</Link>
             </li>
             <li>
-              <Link href={"#"}>COLVEN</Link>
+              <Link href={"#"}>Soluciones</Link>
             </li>
             <li>
               <Link href={"#"}>Novedades</Link>

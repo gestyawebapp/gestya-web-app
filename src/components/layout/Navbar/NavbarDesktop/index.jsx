@@ -69,31 +69,31 @@ const NavbarDesktop = () => {
             >
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/seguimiento-de-vehiculos/gestion">
                     <h4>Seguimiento de Vehículos</h4>
                     <span>Gestión</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/seguimiento-de-vehiculos/logistica">
                     <h4>Seguimiento de Vehículos</h4>
                     <span>Logística</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/seguimiento-de-vehiculos/distancia-recorrida">
                     <h4>Seguimiento de Vehículos</h4>
                     <span>Distancia recorrida</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/seguimiento-de-vehiculos/planificacion">
                     <h4>Seguimiento de Vehículos</h4>
                     <span>Planificación</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/seguimiento-de-vehiculos/alarmas">
                     <h4>Seguimiento de Vehículos</h4>
                     <span>Alarmas</span>
                   </Link>
@@ -101,19 +101,19 @@ const NavbarDesktop = () => {
               </ul>
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/ahorro-de-combustible/eco-drive">
                     <h4>Ahorro de combustible</h4>
                     <span>Eco Drive</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/ahorro-de-combustible/level-control">
                     <h4>Ahorro de combustible</h4>
                     <span>Level Control</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/ahorro-de-combustible/cargas-de-combustible">
                     <h4>Ahorro de combustible</h4>
                     <span>Cargas de combustible</span>
                   </Link>
@@ -121,19 +121,19 @@ const NavbarDesktop = () => {
               </ul>
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/control-y-mantenimiento/horas-de-marcha">
                     <h4>Control y Mantenimiento</h4>
                     <span>Horas de Marcha</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/control-y-mantenimiento/scoring">
                     <h4>Control y Mantenimiento</h4>
                     <span>Scoring</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/funcionalidades/control-y-mantenimiento/wifi">
                     <h4>Control y Mantenimiento</h4>
                     <span>Wifi</span>
                   </Link>
@@ -162,13 +162,13 @@ const NavbarDesktop = () => {
             >
               <ul className={`${styles.column} ${styles.integrations}`}>
                 <li>
-                  <Link href="">
+                  <Link href="/integraciones/vigia/calibrador-de-neumaticos">
                     <h4>VIGIA</h4>
                     <span>Calibrador de Neumáticos</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/integraciones/vigia/protector-de-motor">
                     <h4>VIGIA</h4>
                     <span>Protector de Motor</span>
                   </Link>
@@ -176,8 +176,8 @@ const NavbarDesktop = () => {
               </ul>
               <ul className={`${styles.column} ${styles.integrations}`}>
                 <li>
-                  <Link href="">
-                    <h4>VIESA</h4>
+                  <Link href="/integraciones/vitran/eco-drive">
+                    <h4>VITRÁN</h4>
                     <span>Eco Drive</span>
                   </Link>
                 </li>

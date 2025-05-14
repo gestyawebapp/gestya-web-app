@@ -1,0 +1,46 @@
+.container {
+  min-height: 600px;
+  padding-top: calc(var(--header-mobile-height) + 5rem);
+}
+
+.title {
+  line-height: 150%;
+  margin: 0 auto 2.5rem auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+.title span {
+  color: var(--orange-900);
+}
+
+.linksWrapper {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 auto 2rem auto;
+  max-width: fit-content;
+  width: 100%;
+}
+
+.linkVigia,
+.linkVitran {
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 10px 0 rgba(130, 126, 126, 0.25);
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  padding: 0.5em 1.25em;
+}
+
+.linkVigia.active {
+  background-color: var(--yellow-900);
+}
+
+.linkVitran.active {
+  background-color: var(--green-300);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-top: calc(var(--header-desktop-height) + 5rem);
+  }
+}

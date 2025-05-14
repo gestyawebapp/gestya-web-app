@@ -1,0 +1,37 @@
+.linksWrapper {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 auto 1rem auto;
+  max-width: fit-content;
+  width: 100%;
+}
+
+.link {
+  border: black 1px solid;
+  border-radius: 2rem;
+  color: var(--gray-600);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  padding: 0.5em 1.25em;
+}
+
+.link[data-section="vigia"] {
+  background-color: #ffffea;
+  border-color: var(--yellow-900);
+}
+
+.link[data-section="vitran"] {
+  border-color: var(--green-300);
+}
+
+.link.active {
+  color: #000;
+}
+
+.link[data-section="vigia"].active {
+  background-color: var(--yellow-900);
+}
+
+.link[data-section="vitran"].active {
+  background-color: var(--green-300);
+}
