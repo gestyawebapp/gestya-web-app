@@ -13,7 +13,7 @@ const TechnologySection = () => {
   } = getImageProps({
     ...common,
     width: 1489,
-    height: 538,
+    height: 537,
     quality: 80,
     src: "/images/home/tecnologia-xl.png",
   });

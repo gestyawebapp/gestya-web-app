@@ -1,0 +1,45 @@
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: calc(var(--header-mobile-height) + var(--vertical-container-padding))
+    0 0 0;
+}
+
+.header {
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+}
+
+.text {
+  color: var(--orange-900);
+  font-size: var(--font-size-xl);
+  margin: 1.5rem 0 2rem 0;
+}
+
+.imageWrapper {
+  display: flex;
+  max-width: 365px;
+  width: 100%;
+}
+
+.imageWrapper img {
+  height: auto;
+  width: 100%;
+}
+
+.section a {
+  margin-top: 2rem;
+}
+
+@media (min-width: 992px) {
+  .imageWrapper {
+    max-width: none;
+  }
+}
