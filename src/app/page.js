@@ -4,16 +4,16 @@ import CommercializationSection from "@/components/home/CommercializationSection
 import FunctionalitiesSection from "@/components/home/FunctionalitiesSection";
 import MonitoringSection from "@/components/home/MonitoringSection";
 import TechnologySection from "@/components/home/TechnologySection";
+import InnovationSection from "@/components/home/InnovationSection";
 import LocationsSection from "@/components/home/LocationsSection";
 import SupportSection from "@/components/home/SupportSection";
 import PricingSection from "@/components/home/PricingSection";
 import HeroSection from "@/components/home/HeroSection";
 import FAQSection from "@/components/home/FAQSection";
-import styles from "./styles.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className="main">
       <HeroSection />
       <IntelligentControlSection />
       <FunctionalitiesSection />
@@ -22,6 +22,7 @@ export default function Home() {
       <MonitoringSection />
       <CommercializationSection />
       <LocationsSection />
+      <InnovationSection />
       <SupportSection />
       <FAQSection />
       <PricingSection />

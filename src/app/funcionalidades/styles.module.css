@@ -22,21 +22,59 @@
   width: 100%;
 }
 
+.linksWrapper svg {
+  fill: var(--gray-600);
+}
+
 .linkSeguimientoDeVehiculos,
 .linkAhorroDeCombustible,
 .linkControlYMantenimiento {
+  align-items: center;
   border-radius: 0.25rem;
+  border: transparent 1px solid;
   box-shadow: 0 4px 10px 0 rgba(130, 126, 126, 0.25);
   color: var(--gray-600);
   cursor: pointer;
+  display: flex;
   font-weight: var(--font-weight-bold);
+  gap: 0.5rem;
   padding: 0.5em 1.25em;
+}
+
+.linkSeguimientoDeVehiculos:not(.active):hover {
+  background-color: var(--orange-100);
+  border-color: var(--orange-900);
+  color: #000;
+}
+
+.linkSeguimientoDeVehiculos:not(.active):hover svg,
+.linkAhorroDeCombustible:not(.active):hover svg,
+.linkControlYMantenimiento:not(.active):hover svg {
+  fill: #000;
+}
+
+.linkAhorroDeCombustible:not(.active):hover {
+  background-color: var(--red-100);
+  border-color: var(--red-600);
+  color: #000;
+}
+
+.linkControlYMantenimiento:not(.active):hover {
+  background-color: var(--green-100);
+  border-color: var(--green-900);
+  color: #000;
 }
 
 .linkSeguimientoDeVehiculos.active,
 .linkAhorroDeCombustible.active,
 .linkControlYMantenimiento.active {
   color: #fff;
+}
+
+.linkSeguimientoDeVehiculos.active svg,
+.linkAhorroDeCombustible.active svg,
+.linkControlYMantenimiento.active svg {
+  fill: #fff;
 }
 
 .linkSeguimientoDeVehiculos.active {

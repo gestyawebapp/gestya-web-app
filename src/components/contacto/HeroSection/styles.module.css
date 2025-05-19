@@ -1,0 +1,39 @@
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: calc(var(--header-mobile-height) + 5rem) 0.75rem 0 0.75rem;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  margin-bottom: 2rem;
+}
+
+.title span {
+  color: var(--orange-900);
+}
+
+.subtitle {
+  color: var(--orange-900);
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  max-width: 760px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: calc(var(--header-desktop-height) + 5rem) 0 0 0;
+  }
+
+  .text {
+    max-width: 900px;
+  }
+}

@@ -7,7 +7,7 @@
 }
 
 .link {
-  border: black 1px solid;
+  border: var(--gray-600) 1px solid;
   border-radius: 2rem;
   color: var(--gray-600);
   font-size: var(--font-size-xs);
@@ -15,19 +15,22 @@
   padding: 0.5em 1.25em;
 }
 
-.link[data-section="seguimiento-de-vehiculos"] {
+.link[data-section="seguimiento-de-vehiculos"]:not(.active):hover {
   background-color: var(--orange-100);
   border-color: var(--orange-600);
+  color: #000;
 }
 
-.link[data-section="ahorro-de-combustible"] {
+.link[data-section="ahorro-de-combustible"]:not(.active):hover {
   background-color: var(--red-100);
   border-color: var(--red-600);
+  color: #000;
 }
 
-.link[data-section="control-y-mantenimiento"] {
+.link[data-section="control-y-mantenimiento"]:not(.active):hover {
   background-color: #e9fcf9;
   border-color: var(--green-900);
+  color: #000;
 }
 
 .link.active {
@@ -36,12 +39,15 @@
 
 .link[data-section="seguimiento-de-vehiculos"].active {
   background-color: var(--orange-600);
+  border-color: var(--orange-600);
 }
 
 .link[data-section="ahorro-de-combustible"].active {
   background-color: var(--red-600);
+  border-color: var(--red-600);
 }
 
 .link[data-section="control-y-mantenimiento"].active {
   background-color: var(--green-900);
+  border-color: var(--green-900);
 }

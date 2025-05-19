@@ -22,13 +22,44 @@
   width: 100%;
 }
 
+.linksWrapper svg {
+  fill: var(--gray-600);
+}
+
 .linkVigia,
 .linkVitran {
+  align-items: center;
   border-radius: 0.25rem;
+  border: transparent 1px solid;
   box-shadow: 0 4px 10px 0 rgba(130, 126, 126, 0.25);
+  color: var(--gray-600);
   cursor: pointer;
+  display: flex;
   font-weight: var(--font-weight-bold);
+  gap: 0.5rem;
   padding: 0.5em 1.25em;
+}
+
+.linkVigia:hover {
+  background-color: var(--yellow-100);
+  border: var(--yellow-900) 1px solid;
+  color: #000;
+}
+
+.linkVitran:hover {
+  background-color: var(--green-100);
+  border: var(--green-300) 1px solid;
+  color: #000;
+}
+
+.linkVigia:hover svg,
+.linkVitran:hover svg {
+  fill: #000;
+}
+
+.linkVigia.active,
+.linkVitran.active {
+  color: #000;
 }
 
 .linkVigia.active {
@@ -37,6 +68,11 @@
 
 .linkVitran.active {
   background-color: var(--green-300);
+}
+
+.linkVigia.active svg,
+.linkVitran.active svg {
+  fill: #000;
 }
 
 @media (min-width: 1200px) {

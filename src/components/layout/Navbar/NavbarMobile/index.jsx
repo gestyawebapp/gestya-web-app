@@ -234,10 +234,8 @@ const NavbarMobile = () => {
           </motion.li>
           <li className={styles.navItem}>
             <Link
-              href={"/servicios-oficiales"}
-              className={`${
-                pathname.startsWith("/servicios-oficiales") ? styles.active : ""
-              }`}
+              href={"https://gestya.com/servicios-oficiales/"}
+              target="_blank"
               onClick={() => {
                 setIsNavbarOpen(false);
                 setIsFunctionalitiesMenuOpen(false);

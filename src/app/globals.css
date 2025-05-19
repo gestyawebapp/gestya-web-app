@@ -18,6 +18,7 @@
   --purple-900: #312780;
   --red-600: #ed5550;
   --red-100: #fde9e8;
+  --yellow-100: #ffffea;
   --yellow-900: #fadc0a;
 
   /* Font sizes */
@@ -73,12 +74,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 svg {
   vertical-align: middle;
 }
 
 ul {
   list-style: none;
+}
+
+.main {
+  min-height: 100vh;
 }
 
 .button-primary,

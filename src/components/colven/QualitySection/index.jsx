@@ -1,0 +1,33 @@
+import styles from "./styles.module.css";
+import Image from "next/image";
+
+const QualitySection = () => {
+  return (
+    <section className={styles.section}>
+      <div className={styles.header}>
+        <h2 className={styles.title}>
+          Compromiso con la <span>calidad</span>
+        </h2>
+        <p className={styles.text}>
+          En un mercado donde la tecnología es rápidamente imitada,{" "}
+          <span>
+            el compromiso de COLVEN con altos estándares de fabricación
+            garantiza la vigencia de las soluciones.
+          </span>{" "}
+          Cada producto refleja un nivel de calidad que trasciende las
+          certificaciones como ISO 9001 o normas europeas (CEE y CE).
+        </p>
+      </div>
+      <div className={styles.imageWrapper}>
+        <Image
+          src={"/images/colven/world-xl.png"}
+          width={744}
+          height={638}
+          alt="Grupo COLVEN reunido con presencia en Argentina, Brazil, México, USA, España e Italia"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default QualitySection;

@@ -24,8 +24,8 @@ const SupportSection = () => {
         <div className={styles.imageWrapper}>
           <Image
             src={"/images/home/soporte-xl.png"}
-            width={792}
-            height={658}
+            width={842}
+            height={700}
             alt=""
           />
         </div>

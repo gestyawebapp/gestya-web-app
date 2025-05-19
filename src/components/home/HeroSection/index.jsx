@@ -34,7 +34,7 @@ const HeroSection = () => {
           Solución para <span>monitorear</span> flotas, optimizar la logística y
           reducir costos
         </h1>
-        <Link href="#" className="button-primary">
+        <Link href="/contacto" className="button-primary">
           Solicitar más información
         </Link>
       </div>

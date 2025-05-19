@@ -3,7 +3,7 @@
   background-color: var(--orange-100);
   display: flex;
   flex-direction: column;
-  padding-top: var(--vertical-container-padding);
+  padding-top: calc(var(--vertical-container-padding) / 2);
   text-align: center;
 }
 

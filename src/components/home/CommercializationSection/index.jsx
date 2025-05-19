@@ -11,8 +11,8 @@ const CommercializationSection = () => {
     props: { srcSet: desktop },
   } = getImageProps({
     ...common,
-    width: 821,
-    height: 454,
+    width: 812,
+    height: 455,
     quality: 80,
     src: "/images/home/comercializa-gestya-xl.png",
   });
@@ -20,8 +20,8 @@ const CommercializationSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 364,
-    height: 559,
+    width: 363,
+    height: 558,
     quality: 80,
     src: "/images/home/comercializa-gestya-sm.png",
   });

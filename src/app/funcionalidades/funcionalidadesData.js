@@ -23,10 +23,10 @@ export const funcionalidadesData = {
     title: "Eco Drive",
     description: "La descripción 6",
   },
-  "ahorro-de-combustible/level-control": {
-    title: "Level Control",
-    description: "La descripción 7",
-  },
+  // "ahorro-de-combustible/level-control": {
+  //   title: "Level Control",
+  //   description: "La descripción 7",
+  // },
   "ahorro-de-combustible/cargas-de-combustible": {
     title: "Cargas de combustible",
     description: "La descripción 8",

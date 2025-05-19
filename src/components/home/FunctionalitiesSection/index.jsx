@@ -60,7 +60,7 @@ const FunctionalitiesSection = () => {
         </div>
       </div>
       <CardsContainer cards={renderCards()} />
-      <Link href="" className="button-primary">
+      <Link href="/funcionalidades" className="button-primary">
         Ver todas las funcionalidades
       </Link>
     </section>

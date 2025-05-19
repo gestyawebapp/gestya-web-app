@@ -51,7 +51,7 @@ const CompleteIntegrationSection = () => {
         </picture>
       </div>
       <CardsContainer />
-      <Link href="" className="button-primary">
+      <Link href="/integraciones" className="button-primary">
         Ir a integraciones
       </Link>
     </section>

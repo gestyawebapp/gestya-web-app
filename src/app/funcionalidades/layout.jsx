@@ -2,6 +2,7 @@
 
 import { Combustible } from "@/components/icons/Combustible";
 import { Seguimiento } from "@/components/icons/Seguimiento";
+import { Control } from "@/components/icons/Control";
 import { usePathname } from "next/navigation";
 import styles from "./styles.module.css";
 import Link from "next/link";
@@ -23,15 +24,7 @@ const FuncionalidadesLayout = ({ children }) => {
               : ""
           }`}
         >
-          <Seguimiento
-            size={36}
-            filled
-            fill={
-              pathname.startsWith(`/funcionalidades/seguimiento-de-vehiculos`)
-                ? "#fff"
-                : "#606266"
-            }
-          />
+          <Seguimiento size={36} filled />
           Seguimiento de Vehículos
         </Link>
         <Link
@@ -42,15 +35,7 @@ const FuncionalidadesLayout = ({ children }) => {
               : ""
           }`}
         >
-          <Combustible
-            size={36}
-            filled
-            fill={
-              pathname.startsWith(`/funcionalidades/ahorro-de-combustible`)
-                ? "#fff"
-                : "#606266"
-            }
-          />
+          <Combustible size={36} filled />
           Ahorro de Combustible
         </Link>
         <Link
@@ -61,15 +46,7 @@ const FuncionalidadesLayout = ({ children }) => {
               : ""
           }`}
         >
-          <Combustible
-            size={36}
-            filled
-            fill={
-              pathname.startsWith(`/funcionalidades/control-y-mantenimiento`)
-                ? "#fff"
-                : "#606266"
-            }
-          />
+          <Control size={36} filled />
           Control y Mantenimiento
         </Link>
       </nav>
