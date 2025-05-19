@@ -61,6 +61,7 @@
 }
 
 .column a {
+  align-items: center;
   display: flex;
   font-size: var(--font-size-xs);
   padding-block: 0;
@@ -118,11 +119,15 @@
 }
 
 .column.integrations:first-of-type h4 {
-  color: var(--yellow-900);
+  background-color: var(--yellow-900);
+  margin: 0;
+  padding: 0.25em;
 }
 
 .column.integrations:nth-of-type(2) h4 {
-  color: var(--green-300);
+  background-color: var(--green-300);
+  margin: 0;
+  padding: 0.25em;
 }
 
 .mobileSubmenu {

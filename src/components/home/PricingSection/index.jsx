@@ -27,7 +27,7 @@ const PricingSection = () => {
   });
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="pricingSection">
       <div className={styles.header}>
         <h2 className={styles.title}>
           <span>Cotizá la instalación de GESTYA</span> en tu flota

@@ -146,13 +146,6 @@ const NavbarMobile = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/ahorro-de-combustible/level-control">
-                    <h4>Ahorro de combustible</h4>
-                    <ArrowRight size={20} />
-                    <span>Level Control</span>
-                  </Link>
-                </li>
-                <li>
                   <Link href="/funcionalidades/ahorro-de-combustible/cargas-de-combustible">
                     <h4>Ahorro de combustible</h4>
                     <ArrowRight size={20} />

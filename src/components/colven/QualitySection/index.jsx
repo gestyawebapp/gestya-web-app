@@ -20,10 +20,10 @@ const QualitySection = () => {
       </div>
       <div className={styles.imageWrapper}>
         <Image
-          src={"/images/colven/world-xl.png"}
-          width={744}
-          height={638}
-          alt="Grupo COLVEN reunido con presencia en Argentina, Brazil, México, USA, España e Italia"
+          src={"/images/colven/quality-xl.png"}
+          width={895}
+          height={895}
+          alt="Compromiso de COLVEN con la tecnología"
         />
       </div>
     </section>

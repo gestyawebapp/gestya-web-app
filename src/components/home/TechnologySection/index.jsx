@@ -39,7 +39,7 @@ const TechnologySection = () => {
             <span>aplicación móvil exclusiva.</span> Accedé a datos clave como
             ubicación, estado de los vehículos, consumo de combustible y más.
           </p>
-          <Link href="" className="button-secondary">
+          <Link href="#pricingSection" className="button-secondary">
             Más información
           </Link>
         </div>

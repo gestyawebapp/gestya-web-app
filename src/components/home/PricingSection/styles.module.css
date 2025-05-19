@@ -6,6 +6,7 @@
   margin: 0 auto;
   max-width: var(--max-container-width);
   padding: calc(var(--vertical-container-padding) / 2) 0.75rem 0 0.75rem;
+  scroll-margin-top: var(--header-mobile-height);
 }
 
 .header {
@@ -36,6 +37,7 @@
 
 .imageWrapper img {
   height: auto;
+  vertical-align: bottom;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +80,10 @@
 }
 
 @media (min-width: 1200px) {
+  .section {
+    scroll-margin-top: var(--header-desktop-height);
+  }
+
   .header {
     max-width: 475px;
   }

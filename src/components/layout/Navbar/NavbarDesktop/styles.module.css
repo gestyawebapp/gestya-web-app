@@ -110,11 +110,15 @@
 }
 
 .column.integrations:first-of-type h4 {
-  color: var(--yellow-900);
+  background-color: var(--yellow-900);
+  max-width: fit-content;
+  padding: 0.25em;
 }
 
 .column.integrations:nth-of-type(2) h4 {
-  color: var(--green-300);
+  background-color: var(--green-300);
+  max-width: fit-content;
+  padding: 0.25em;
 }
 
 .hasSubmenu:hover .submenu,

@@ -8,7 +8,7 @@ const allFuncionalidadesSubsections = {
   "seguimiento-de-vehiculos": [
     { label: "Gestión", path: "gestion" },
     { label: "Logística", path: "logistica" },
-    { label: "Distancia Recorrida", path: "distancia-recorrida" },
+    // { label: "Distancia Recorrida", path: "distancia-recorrida" },
     { label: "Planificación", path: "planificacion" },
     { label: "Alarmas", path: "alarmas" },
   ],

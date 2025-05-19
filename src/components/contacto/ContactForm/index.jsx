@@ -53,32 +53,30 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <div className={styles.formRow}>
-        <input {...register("first_name")} placeholder="Nombre*" />
+        <input {...register("nombre")} placeholder="Nombre*" />
       </div>
-      <div className={styles.formCustomError}>
-        {errors?.first_name?.message}
-      </div>
+      <div className={styles.formCustomError}>{errors?.nombre?.message}</div>
       <div className={styles.formRow}>
-        <input {...register("last_name")} placeholder="Apellido*" />
+        <input {...register("apellido")} placeholder="Apellido*" />
       </div>
-      <div className={styles.formCustomError}>{errors?.last_name?.message}</div>
+      <div className={styles.formCustomError}>{errors?.apellido?.message}</div>
       <div className={styles.formRow}>
         <input {...register("email")} placeholder="Email*" />
       </div>
       <div className={styles.formCustomError}>{errors?.email?.message}</div>
       <div className={styles.formRow}>
-        <input {...register("cellphone")} placeholder="Teléfono*" />
+        <input {...register("telefono")} placeholder="Teléfono*" />
       </div>
-      <div className={styles.formCustomError}>{errors?.cellphone?.message}</div>
+      <div className={styles.formCustomError}>{errors?.telefono?.message}</div>
       <div className={styles.formRow}>
-        <select {...register("city")} placeholder="Localidad*" />
+        <select {...register("provincia")} placeholder="Provincia*" />
         <option value=""></option>
       </div>
-      <div className={styles.formCustomError}>{errors?.city?.message}</div>
+      <div className={styles.formCustomError}>{errors?.provincia?.message}</div>
       <div className={styles.formRow}>
-        <textarea {...register("message")} placeholder="Mensaje*" />
+        <textarea {...register("mensaje")} placeholder="Mensaje*" />
       </div>
-      <div className={styles.formCustomError}>{errors?.message?.message}</div>
+      <div className={styles.formCustomError}>{errors?.mensaje?.message}</div>
       <button className="button-primary" type="submit">
         Enviar
       </button>

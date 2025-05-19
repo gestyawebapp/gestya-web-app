@@ -1,6 +1,7 @@
 import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const InnovationSection = () => {
   const common = {
@@ -82,6 +83,9 @@ const InnovationSection = () => {
           alt="Logo VORYL"
         />
       </div>
+      <Link href={"/colven"} className={"button-primary"}>
+        Conocé más
+      </Link>
     </section>
   );
 };

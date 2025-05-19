@@ -107,12 +107,6 @@ const NavbarDesktop = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/ahorro-de-combustible/level-control">
-                    <h4>Ahorro de combustible</h4>
-                    <span>Level Control</span>
-                  </Link>
-                </li>
-                <li>
                   <Link href="/funcionalidades/ahorro-de-combustible/cargas-de-combustible">
                     <h4>Ahorro de combustible</h4>
                     <span>Cargas de combustible</span>

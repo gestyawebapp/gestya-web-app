@@ -1,16 +1,10 @@
 import { z } from "zod";
 
 export const ContactFormSchema = z.object({
-  first_name: z
-    .string()
-    .min(1, { message: "Debe contener al menos 1 caracter" }),
-  last_name: z
-    .string()
-    .min(1, { message: "Debe contener al menos 1 caracter" }),
+  nombre: z.string().min(1, { message: "Debe contener al menos 1 caracter" }),
+  apellido: z.string().min(1, { message: "Debe contener al menos 1 caracter" }),
   email: z.string().email({ message: "Ingrese un email válido" }).trim(),
-  cellphone: z
-    .string()
-    .min(1, { message: "Debe contener al menos 1 caracter" }),
-  city: z.string(),
-  message: z.string().min(1, { message: "Debe contener al menos 1 caracter" }),
+  telefono: z.string().min(1, { message: "Debe contener al menos 1 caracter" }),
+  provincia: z.string(),
+  mensaje: z.string().min(1, { message: "Debe contener al menos 1 caracter" }),
 });

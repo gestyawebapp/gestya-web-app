@@ -13,16 +13,30 @@ const Footer = () => {
           <p className={styles.title}>Mantengámonos en contacto</p>
           <p className={styles.text}>Seguinos en nuestras Redes Sociales</p>
           <div className={styles.iconsWrapper}>
-            <Link href={"#"}>
+            <Link
+              href={"https://www.facebook.com/gestya.flotas/?locale=es_LA"}
+              target="_blank"
+            >
               <Facebook size={40} />
             </Link>
-            <Link href={"#"}>
+            <Link
+              href={"https://www.instagram.com/gestyaservicio/?hl=es"}
+              target="_blank"
+            >
               <Instagram size={40} />
             </Link>
-            <Link href={"#"}>
+            <Link
+              href={
+                "https://www.linkedin.com/showcase/gestyaservicio/posts/?feedView=all"
+              }
+              target="_blank"
+            >
               <LinkedIn size={40} />
             </Link>
-            <Link href={"#"}>
+            <Link
+              href={"https://www.youtube.com/@GestyaServicio"}
+              target="_blank"
+            >
               <Youtube size={40} filled />
             </Link>
           </div>
@@ -54,22 +68,27 @@ const Footer = () => {
         <div className={styles.footerLinks}>
           <ul>
             <li>
-              <Link href={"#"}>Funcionalidades</Link>
+              <Link href={"/funcionalidades"}>Funcionalidades</Link>
             </li>
             <li>
-              <Link href={"#"}>Integraciones</Link>
+              <Link href={"/integraciones"}>Integraciones</Link>
             </li>
             <li>
-              <Link href={"#"}>Servicios Oficiales</Link>
+              <Link
+                href={"https://gestya.com/servicios-oficiales/"}
+                target="_blank"
+              >
+                Servicios Oficiales
+              </Link>
             </li>
             <li>
-              <Link href={"#"}>COLVEN</Link>
+              <Link href={"/soluciones"}>Soluciones</Link>
             </li>
             <li>
-              <Link href={"#"}>Soluciones</Link>
+              <Link href={"/colven"}>COLVEN</Link>
             </li>
             <li>
-              <Link href={"#"}>Novedades</Link>
+              <Link href={"/contacto"}>Contacto</Link>
             </li>
           </ul>
         </div>

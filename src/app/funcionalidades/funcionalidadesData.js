@@ -7,10 +7,10 @@ export const funcionalidadesData = {
     title: "Logística",
     description: "La descripción 2",
   },
-  "seguimiento-de-vehiculos/distancia-recorrida": {
-    title: "Distancia Recorrida",
-    description: "La descripción 3",
-  },
+  // "seguimiento-de-vehiculos/distancia-recorrida": {
+  //   title: "Distancia Recorrida",
+  //   description: "La descripción 3",
+  // },
   "seguimiento-de-vehiculos/planificacion": {
     title: "Planificación",
     description: "La descripción 4",
