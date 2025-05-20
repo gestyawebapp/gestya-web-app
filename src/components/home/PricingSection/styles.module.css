@@ -17,6 +17,11 @@
   width: 100%;
 }
 
+.header > a {
+  max-width: 460px;
+  width: 100%;
+}
+
 .title {
   font-size: var(--font-size-4xl);
 }
@@ -45,7 +50,7 @@
     max-width: 650px;
   }
 
-  .header a {
+  .header > a {
     margin: 0;
     max-width: fit-content;
   }

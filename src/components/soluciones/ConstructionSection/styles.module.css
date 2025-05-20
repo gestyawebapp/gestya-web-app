@@ -36,10 +36,10 @@
 .tagContainer {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  max-width: 500px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -49,8 +49,8 @@
   color: var(--blue-800);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
-  max-width: 175px;
-  padding: 0.75em;
+  max-width: 135px;
+  padding: 0.5em;
   text-align: center;
   width: 100%;
 }
@@ -90,7 +90,13 @@
 
 @media (min-width: 500px) {
   .tagContainer {
-    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 500px;
+  }
+
+  .tagContainer div {
+    padding: 0.75em;
   }
 }
 

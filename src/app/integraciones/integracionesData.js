@@ -30,7 +30,7 @@ export const integracionesData = {
   "vitran/eco-drive": {
     hero: {
       logoUrl: "/images/home/logo-vitran.png",
-      logoAlt: "Logo VITRÁN",
+      logoAlt: "Logo VITRAN",
       title: "Monitor de Presión de Neumáticos",
       subtitle: "Eventos de baja presión de aceite o alta temperatura",
       text: "VITRAN Monitor de Presión de Neumáticos muestra la presión y temperatura de los neumáticos en una pantalla a color.",

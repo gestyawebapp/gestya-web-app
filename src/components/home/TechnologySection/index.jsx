@@ -1,6 +1,5 @@
 import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
-import Image from "next/image";
 import Link from "next/link";
 
 const TechnologySection = () => {
@@ -13,7 +12,7 @@ const TechnologySection = () => {
   } = getImageProps({
     ...common,
     width: 1489,
-    height: 537,
+    height: 538,
     quality: 80,
     src: "/images/home/tecnologia-xl.png",
   });
