@@ -12,8 +12,8 @@ const HeroSection = () => {
     props: { srcSet: desktop },
   } = getImageProps({
     ...common,
-    width: 1440,
-    height: 875,
+    width: 1440 /* 5784 */,
+    height: 875 /* 1917 */,
     quality: 80,
     src: "/images/home/hero-xl.png",
   });

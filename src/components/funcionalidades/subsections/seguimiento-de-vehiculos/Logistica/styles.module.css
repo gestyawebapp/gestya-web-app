@@ -1,0 +1,163 @@
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--max-container-width);
+  padding: calc(var(--vertical-container-padding) / 2) 0.75rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.header > img {
+  margin-bottom: 2rem;
+}
+
+.header > button {
+  border: 0;
+  margin-top: 2rem;
+  max-width: none;
+  width: 100%;
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  line-height: 128%;
+  margin-bottom: 1.25rem;
+}
+
+.title span {
+  color: var(--orange-900);
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  line-height: 128%;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+}
+
+.heroImageWrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.heroImageWrapper img {
+  height: auto;
+  width: 100%;
+}
+
+.heroImageWrapper,
+.controlImageWrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.controlImageWrapper {
+  margin-bottom: 3.5rem;
+}
+
+.heroImageWrapper img,
+.controlImageWrapper img {
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  background-color: var(--gray-100);
+  border-radius: 0.5rem;
+  max-width: 650px;
+  padding: 3em;
+}
+
+.container:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.container .subtitle {
+  margin-top: 0;
+}
+
+.container .text {
+  font-size: var(--font-size-md);
+  text-wrap: balance;
+}
+
+.container .text:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.container .text:last-of-type {
+  font-weight: var(--font-weight-semi-bold);
+  margin-bottom: 2rem;
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  font-size: var(--font-size-xs);
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.item:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .header > button {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: calc(var(--vertical-container-padding) / 2) 3.75rem;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .header > button {
+    max-width: 250px;
+  }
+
+  .heroImageWrapper {
+    max-width: 600px;
+  }
+
+  .controlImageWrapper {
+    margin-bottom: 0;
+  }
+
+  .container {
+    min-height: 585px;
+    padding: 3em 2em;
+  }
+
+  .container:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .container .text:last-of-type {
+    text-wrap: wrap;
+  }
+}
+
+@media (min-width: 1370px) {
+  .container {
+    min-height: auto;
+  }
+}

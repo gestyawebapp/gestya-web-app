@@ -4,9 +4,10 @@
 }
 
 .title {
+  font-size: var(--font-size-2xl);
   line-height: 150%;
   margin: 0 auto 2.5rem auto;
-  max-width: 350px;
+  max-width: 400px;
   text-align: center;
 }
 

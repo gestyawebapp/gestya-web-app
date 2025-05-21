@@ -14,7 +14,6 @@ const allFuncionalidadesSubsections = {
   ],
   "ahorro-de-combustible": [
     { label: "Eco Drive", path: "eco-drive" },
-    // { label: "Level Control", path: "level-control" },
     { label: "Cargas de combustible", path: "cargas-de-combustible" },
   ],
   "control-y-mantenimiento": [

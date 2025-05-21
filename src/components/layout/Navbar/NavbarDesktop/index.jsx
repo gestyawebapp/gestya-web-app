@@ -81,12 +81,6 @@ const NavbarDesktop = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/seguimiento-de-vehiculos/distancia-recorrida">
-                    <h4>Seguimiento de Vehículos</h4>
-                    <span>Distancia recorrida</span>
-                  </Link>
-                </li>
-                <li>
                   <Link href="/funcionalidades/seguimiento-de-vehiculos/planificacion">
                     <h4>Seguimiento de Vehículos</h4>
                     <span>Planificación</span>

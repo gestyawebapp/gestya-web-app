@@ -51,8 +51,8 @@
   }
 
   .header > a {
-    margin: 0;
-    max-width: fit-content;
+    margin-right: auto;
+    max-width: 250px;
   }
 }
 
