@@ -24,8 +24,8 @@ const Gestion = () => {
             src={
               "/images/funcionalidades/seguimiento-de-vehiculos/gestion/hero-xl.png"
             }
-            width={682}
-            height={672}
+            width={1471}
+            height={1449}
             alt=""
           />
         </div>
@@ -36,8 +36,8 @@ const Gestion = () => {
             src={
               "/images/funcionalidades/seguimiento-de-vehiculos/gestion/control-xl.png"
             }
-            width={648}
-            height={669}
+            width={1471}
+            height={1518}
             alt=""
           />
         </div>

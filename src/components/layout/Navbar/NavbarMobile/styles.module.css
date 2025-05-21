@@ -70,7 +70,6 @@
 .column h4 {
   display: none;
   font-size: var(--font-size-xs);
-  margin-bottom: 0.5rem;
 }
 
 .column svg {

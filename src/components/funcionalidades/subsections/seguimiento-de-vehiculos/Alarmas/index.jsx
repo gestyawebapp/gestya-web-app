@@ -1,8 +1,32 @@
 import PricingSection from "@/components/home/PricingSection";
+import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
 const Alarmas = () => {
+  const common = {
+    alt: "",
+    sizes: "",
+  };
+  const {
+    props: { srcSet: heroDesktop },
+  } = getImageProps({
+    ...common,
+    width: 1471,
+    height: 1374,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/hero-xl.png",
+  });
+  const {
+    props: { srcSet: heroMobile, ...heroRest },
+  } = getImageProps({
+    ...common,
+    width: 750,
+    height: 1038,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/hero-sm.png",
+  });
+
   return (
     <>
       <section className={styles.section}>
@@ -25,16 +49,11 @@ const Alarmas = () => {
           </p>
           <button className={"button-primary"}>Descargar PDF</button>
         </div>
-        <div className={styles.heroImageWrapper}>
-          <Image
-            src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/hero-xl.png"
-            }
-            width={684}
-            height={706}
-            alt=""
-          />
-        </div>
+        <picture className={styles.heroImageWrapper}>
+          <source media="(max-width: 991px)" srcSet={heroMobile} />
+          <source media="(min-width: 992px)" srcSet={heroDesktop} />
+          <img {...heroRest} alt={heroRest.alt} />
+        </picture>
       </section>
       <section className={styles.section}>
         <div className={styles.controlImageWrapper}>
@@ -42,8 +61,8 @@ const Alarmas = () => {
             src={
               "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/alertas-sm.png"
             }
-            width={360}
-            height={342}
+            width={750}
+            height={711}
             alt=""
           />
         </div>

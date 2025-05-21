@@ -1,8 +1,32 @@
 import PricingSection from "@/components/home/PricingSection";
+import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
 const Logistica = () => {
+  const common = {
+    alt: "",
+    sizes: "",
+  };
+  const {
+    props: { srcSet: heroDesktop },
+  } = getImageProps({
+    ...common,
+    width: 1471,
+    height: 1518,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/logistica/hero-xl.png",
+  });
+  const {
+    props: { srcSet: heroMobile, ...heroRest },
+  } = getImageProps({
+    ...common,
+    width: 750,
+    height: 1040,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/logistica/hero-sm.png",
+  });
+
   return (
     <>
       <section className={styles.section}>
@@ -25,27 +49,22 @@ const Logistica = () => {
           </p>
           <button className={"button-primary"}>Descargar PDF</button>
         </div>
-        <div className={styles.heroImageWrapper}>
-          <Image
-            src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/hero-xl.png"
-            }
-            width={682}
-            height={704}
-            alt=""
-          />
-        </div>
+        <picture className={styles.heroImageWrapper}>
+          <source media="(max-width: 991px)" srcSet={heroMobile} />
+          <source media="(min-width: 992px)" srcSet={heroDesktop} />
+          <img {...heroRest} alt={heroRest.alt} />
+        </picture>
       </section>
       <section className={styles.section}>
         <div className={styles.controlImageWrapper}>
           <Image
             src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/gestion-xl.png"
+              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/gestion-sm.png"
             }
-            width={535}
-            height={732}
+            width={750}
+            height={1160}
             alt=""
-          />
+          ></Image>
         </div>
         <div className={styles.header}>
           <h2 className={styles.title}>

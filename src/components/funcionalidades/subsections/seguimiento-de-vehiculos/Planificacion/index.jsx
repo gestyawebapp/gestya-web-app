@@ -1,8 +1,50 @@
 import PricingSection from "@/components/home/PricingSection";
+import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
 const Planificacion = () => {
+  const common = {
+    alt: "",
+    sizes: "",
+  };
+  const {
+    props: { srcSet: heroDesktop },
+  } = getImageProps({
+    ...common,
+    width: 1471,
+    height: 1518,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/hero-xl.png",
+  });
+  const {
+    props: { srcSet: heroMobile, ...heroRest },
+  } = getImageProps({
+    ...common,
+    width: 750,
+    height: 1158,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/hero-sm.png",
+  });
+  const {
+    props: { srcSet: controlDesktop },
+  } = getImageProps({
+    ...common,
+    width: 1471,
+    height: 964,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/entregas-xl.png",
+  });
+  const {
+    props: { srcSet: controlMobile, ...controlRest },
+  } = getImageProps({
+    ...common,
+    width: 750,
+    height: 1101,
+    quality: 80,
+    src: "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/entregas-sm.png",
+  });
+
   return (
     <>
       <section className={styles.section}>
@@ -26,28 +68,18 @@ const Planificacion = () => {
           </p>
           <button className={"button-primary"}>Descargar PDF</button>
         </div>
-        <div className={styles.heroImageWrapper}>
-          <Image
-            src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/hero-xl.png"
-            }
-            width={684}
-            height={706}
-            alt=""
-          />
-        </div>
+        <picture className={styles.heroImageWrapper}>
+          <source media="(max-width: 991px)" srcSet={heroMobile} />
+          <source media="(min-width: 992px)" srcSet={heroDesktop} />
+          <img {...heroRest} alt={heroRest.alt} />
+        </picture>
       </section>
       <section className={styles.section}>
-        <div className={styles.controlImageWrapper}>
-          <Image
-            src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/entregas-xl.png"
-            }
-            width={658}
-            height={431}
-            alt=""
-          />
-        </div>
+        <picture className={styles.controlImageWrapper}>
+          <source media="(max-width: 991px)" srcSet={controlMobile} />
+          <source media="(min-width: 992px)" srcSet={controlDesktop} />
+          <img {...controlRest} alt={controlRest.alt} />
+        </picture>
         <div className={styles.header}>
           <h2 className={styles.title}>
             Asegurá <span>el cumplimiento de las entregas</span>
