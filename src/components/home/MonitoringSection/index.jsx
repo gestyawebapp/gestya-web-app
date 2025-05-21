@@ -20,8 +20,8 @@ const MonitoringSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 363,
-    height: 558,
+    width: 757,
+    height: 1163,
     quality: 80,
     src: "/images/home/monitoreo-sm.png",
   });

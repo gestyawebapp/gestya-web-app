@@ -12,17 +12,17 @@ const HeroSection = () => {
     props: { srcSet: desktop },
   } = getImageProps({
     ...common,
-    width: 1440 /* 5784 */,
-    height: 875 /* 1917 */,
-    quality: 80,
+    width: 2892 /* 5784 */,
+    height: 959 /* 1917 */,
+    quality: 100,
     src: "/images/home/hero-xl.png",
   });
   const {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 400,
-    height: 400,
+    width: 757,
+    height: 707,
     quality: 80,
     src: "/images/home/hero-sm.png",
   });

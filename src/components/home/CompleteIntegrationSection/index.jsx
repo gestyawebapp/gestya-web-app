@@ -21,8 +21,8 @@ const CompleteIntegrationSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 357,
-    height: 590,
+    width: 757,
+    height: 1257,
     quality: 80,
     src: "/images/home/integracion-completa-sm.png",
   });

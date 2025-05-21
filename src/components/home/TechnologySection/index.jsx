@@ -20,8 +20,8 @@ const TechnologySection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 364,
-    height: 522,
+    width: 757,
+    height: 1088,
     quality: 80,
     src: "/images/home/tecnologia-sm.png",
   });

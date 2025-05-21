@@ -40,9 +40,15 @@
   color: var(--orange-900);
 }
 
+.imageWrapper {
+  max-width: 460px;
+  width: 100%;
+}
+
 .imageWrapper img {
   height: auto;
   vertical-align: bottom;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -53,6 +59,10 @@
   .header > a {
     margin-right: auto;
     max-width: 250px;
+  }
+
+  .imageWrapper {
+    max-width: 650px;
   }
 }
 

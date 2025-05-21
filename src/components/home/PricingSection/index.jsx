@@ -20,8 +20,8 @@ const PricingSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 370,
-    height: 288,
+    width: 757,
+    height: 600,
     quality: 80,
     src: "/images/home/cotizar-sm.png",
   });

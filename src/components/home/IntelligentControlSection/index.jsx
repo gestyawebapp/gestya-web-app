@@ -21,8 +21,8 @@ const IntelligentControlSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 363,
-    height: 459,
+    width: 757,
+    height: 957,
     quality: 80,
     src: "/images/home/control-inteligente-sm.png",
   });
