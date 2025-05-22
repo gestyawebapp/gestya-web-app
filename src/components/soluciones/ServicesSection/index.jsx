@@ -1,16 +1,20 @@
+import Carousel from "@/components/layout/Carousel";
 import styles from "./styles.module.css";
-import Image from "next/image";
 
 const ServicesSection = () => {
+  const carouselImages = [
+    "/images/soluciones/servicios-01.jpg",
+    "/images/soluciones/servicios-02.jpg",
+    "/images/soluciones/servicios-03.jpg",
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.content}>
         <div className={styles.imageWrapper}>
-          <Image
-            src={"/images/soluciones/ambulancia-md.png"}
-            width={568}
-            height={467}
-            alt=""
+          <Carousel
+            images={carouselImages}
+            altPrefix="Servicios técnicos, seguridad y sanidad"
           />
         </div>
         <div className={styles.tagContainer}>

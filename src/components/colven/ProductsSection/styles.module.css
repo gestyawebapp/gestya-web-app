@@ -70,6 +70,10 @@
   max-width: 125px;
 }
 
+.products img {
+  width: 100%;
+}
+
 @media (min-width: 576px) {
   .logos {
     padding: 1em;
@@ -111,7 +115,11 @@
     max-width: none;
   }
 
+  .products img {
+    max-width: 300px;
+  }
+
   .logos img {
-    max-width: 150px;
+    max-width: 200px;
   }
 }

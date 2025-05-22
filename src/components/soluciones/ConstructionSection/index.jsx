@@ -1,7 +1,14 @@
+import Carousel from "@/components/layout/Carousel";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
 const ConstructionSection = () => {
+  const carouselImages = [
+    "/images/soluciones/construccion-01.jpg",
+    "/images/soluciones/construccion-02.jpg",
+    "/images/soluciones/construccion-03.jpg",
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
@@ -29,12 +36,7 @@ const ConstructionSection = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
-            <Image
-              src={"/images/soluciones/maquinaria-md.png"}
-              width={571}
-              height={468}
-              alt=""
-            />
+            <Carousel images={carouselImages} altPrefix="Camión" />
           </div>
           <div className={styles.tagContainer}>
             <div>Mantenimiento</div>

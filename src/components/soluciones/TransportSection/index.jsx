@@ -1,7 +1,13 @@
+import Carousel from "@/components/layout/Carousel";
 import styles from "./styles.module.css";
-import Image from "next/image";
 
 const TransportSection = () => {
+  const carouselImages = [
+    "/images/soluciones/transporte-01.jpg",
+    "/images/soluciones/transporte-02.jpg",
+    "/images/soluciones/transporte-03.jpg",
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
@@ -28,11 +34,9 @@ const TransportSection = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
-            <Image
-              src={"/images/soluciones/micros-md.png"}
-              width={572}
-              height={468}
-              alt=""
+            <Carousel
+              images={carouselImages}
+              altPrefix="Transporte de pasajeros"
             />
           </div>
           <div className={styles.tagContainer}>

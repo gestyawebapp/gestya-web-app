@@ -1,16 +1,20 @@
+import Carousel from "@/components/layout/Carousel";
 import styles from "./styles.module.css";
-import Image from "next/image";
 
 const OilSection = () => {
+  const carouselImages = [
+    "/images/soluciones/petroleo-01.jpg",
+    "/images/soluciones/petroleo-02.jpg",
+    "/images/soluciones/petroleo-03.jpg",
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.content}>
         <div className={styles.imageWrapper}>
-          <Image
-            src={"/images/soluciones/agro-md.png"}
-            width={568}
-            height={466}
-            alt=""
+          <Carousel
+            images={carouselImages}
+            altPrefix="Petroleo agricultura y minería"
           />
         </div>
         <div className={styles.tagContainer}>

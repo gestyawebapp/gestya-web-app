@@ -1,16 +1,22 @@
+import Carousel from "@/components/layout/Carousel";
 import styles from "./styles.module.css";
-import Image from "next/image";
 
 const LogisticsSection = () => {
+  const carouselImages = [
+    "/images/soluciones/logistica-01.jpg",
+    "/images/soluciones/logistica-02.jpg",
+    "/images/soluciones/logistica-03.jpg",
+    "/images/soluciones/logistica-04.jpg",
+    "/images/soluciones/logistica-05.jpg",
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.content}>
         <div className={styles.imageWrapper}>
-          <Image
-            src={"/images/soluciones/camion-md.png"}
-            width={571}
-            height={468}
-            alt=""
+          <Carousel
+            images={carouselImages}
+            altPrefix="Logística y transporte"
           />
         </div>
         <div className={styles.tagContainer}>
