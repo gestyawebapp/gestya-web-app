@@ -13,7 +13,7 @@ import FAQSection from "@/components/home/FAQSection";
 
 export default function Home() {
   return (
-    <main className="main">
+    <>
       <HeroSection />
       <IntelligentControlSection />
       <FunctionalitiesSection />
@@ -26,6 +26,6 @@ export default function Home() {
       <SupportSection />
       <FAQSection />
       <PricingSection />
-    </main>
+    </>
   );
 }

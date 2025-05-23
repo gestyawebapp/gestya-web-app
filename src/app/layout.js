@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="es" className={inter.className}>
       <body>
         <Header />
-        <main>{children}</main>
+        <main className="main">{children}</main>
         <Footer />
         <ScrollToTopButton />
       </body>

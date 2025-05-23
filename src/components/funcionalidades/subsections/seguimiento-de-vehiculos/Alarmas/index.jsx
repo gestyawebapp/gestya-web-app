@@ -33,9 +33,9 @@ const Alarmas = () => {
         <div className={styles.header}>
           <Image
             src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/gestya.png"
+              "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/gestya-alarmas.png"
             }
-            width={217}
+            width={218}
             height={100}
             alt=""
           />
@@ -47,7 +47,6 @@ const Alarmas = () => {
             GESTYA cuenta con un módulo para visualizar todas las alarmas
             generadas del sistema y facilitar su gestión.
           </p>
-          <button className={"button-primary"}>Descargar PDF</button>
         </div>
         <picture className={styles.heroImageWrapper}>
           <source media="(max-width: 991px)" srcSet={heroMobile} />

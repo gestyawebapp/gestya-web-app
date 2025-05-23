@@ -33,7 +33,7 @@ const Logistica = () => {
         <div className={styles.header}>
           <Image
             src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/gestya.png"
+              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/gestya-logistica.png"
             }
             width={217}
             height={100}
@@ -47,7 +47,6 @@ const Logistica = () => {
             Conjunto de funcionalidades que permiten un conocimiento preciso de
             la ubicación, estado y traslados de la flota.
           </p>
-          <button className={"button-primary"}>Descargar PDF</button>
         </div>
         <picture className={styles.heroImageWrapper}>
           <source media="(max-width: 991px)" srcSet={heroMobile} />

@@ -40,6 +40,17 @@
   line-height: 150%;
 }
 
+.privacy .link {
+  color: var(--blue-900);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.privacy .link:hover {
+  color: var(--orange-900);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (min-width: 992px) {
   .container {
     padding: var(--vertical-container-padding) 3.75rem

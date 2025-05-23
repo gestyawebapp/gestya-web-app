@@ -10,7 +10,7 @@ import styles from "./styles.module.css";
 
 const SolucionesPage = () => {
   return (
-    <div className="main">
+    <>
       <HeroSection />
       <LogisticsSection />
       <ConstructionSection />
@@ -18,7 +18,7 @@ const SolucionesPage = () => {
       <TransportSection />
       <OilSection />
       <PricingSection />
-    </div>
+    </>
   );
 };
 

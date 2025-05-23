@@ -17,7 +17,6 @@ const Gestion = () => {
             GESTYA permite verificar el mantenimiento, las reparaciones y
             vencimientos de documentos clave.
           </p>
-          <button className={"button-primary"}>Descargar PDF</button>
         </div>
         <div className={styles.heroImageWrapper}>
           <Image

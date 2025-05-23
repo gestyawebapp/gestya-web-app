@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 150%;
+  padding: calc(var(--header-mobile-height) + 5rem) 0.75rem 0 0.75rem;
+}
+
+.title {
+  color: var(--orange-900);
+  font-size: var(--font-size-3xl);
+  margin-bottom: 1rem;
+}
+.subtitle {
+  font-size: var(--font-size-lg);
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: var(--font-size-sm);
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: calc(var(--header-desktop-height) + 5rem) 3.75rem 0 3.75rem;
+  }
+}

@@ -14,6 +14,7 @@
 }
 
 .form input,
+.form select,
 .form textarea {
   border: var(--orange-900) 1px solid;
   border-radius: 0.25em;
@@ -27,7 +28,7 @@
 }
 
 .form input::placeholder {
-  color: var(--gray-600);
+  color: #000;
 }
 
 .formCustomError {

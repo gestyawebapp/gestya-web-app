@@ -2,6 +2,7 @@ import ContactSection from "@/components/contacto/ContactSection";
 import HeroSection from "@/components/contacto/HeroSection";
 import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const ContactoPage = () => {
   const common = {
@@ -28,7 +29,7 @@ const ContactoPage = () => {
   });
 
   return (
-    <main className="main">
+    <>
       <HeroSection />
       <ContactSection />
       <div className={styles.container}>
@@ -43,12 +44,15 @@ const ContactoPage = () => {
           <h2 className={styles.title}>Política de privacidad</h2>
           <p className={styles.text}>
             GESTYA puede guardar, almacenar y usar los datos proporcionados para
-            mejorar el servicio al cliente según se describe en la política de
-            privacidad de GESTYA.
+            mejorar el servicio al cliente según se describe en la{" "}
+            <Link href="/privacidad" className={styles.link}>
+              política de privacidad de GESTYA
+            </Link>
+            .
           </p>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 

@@ -3,10 +3,10 @@ import HeroSection from "@/components/gracias/HeroSection";
 
 const GraciasPage = () => {
   return (
-    <main className="main">
+    <>
       <HeroSection />
       <VideoSection />
-    </main>
+    </>
   );
 };
 

@@ -51,9 +51,9 @@ const Planificacion = () => {
         <div className={styles.header}>
           <Image
             src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/logistica/gestya.png"
+              "/images/funcionalidades/seguimiento-de-vehiculos/planificacion/gestya-planificacion.png"
             }
-            width={217}
+            width={218}
             height={100}
             alt=""
           />
@@ -66,7 +66,6 @@ const Planificacion = () => {
             de logística, garantizando el cumplimiento de las entregas y la
             continuidad operativa.
           </p>
-          <button className={"button-primary"}>Descargar PDF</button>
         </div>
         <picture className={styles.heroImageWrapper}>
           <source media="(max-width: 991px)" srcSet={heroMobile} />
