@@ -20,6 +20,8 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     try {
+      console.log(data);
+
       console.log("Errores de formulario", errors); // Errores en el form
 
       /* handleSubmit ya valida el form (según schema definido en Zod) por lo que no es necesario utilizar trigger() para validar manualmente */
