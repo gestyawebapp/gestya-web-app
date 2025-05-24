@@ -1,8 +1,25 @@
+.title,
+.subtitle {
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.title {
+  color: var(--orange-900);
+  font-size: var(--font-size-2xl);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: var(--font-size-md);
+  margin-bottom: 0.5rem;
+}
+
 .form {
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 3rem auto;
   max-width: 450px;
   padding: 2.25rem 0 0 0;
   width: 100%;

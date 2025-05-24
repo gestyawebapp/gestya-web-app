@@ -41,7 +41,7 @@ const ServicesSection = () => {
         <p>Garantizá que la flota esté operativa</p>
         <p>
           Con GESTYA los supervisores pueden visualizar cada unidad y seguir su
-          ubicación en tiempo real.
+          ubicación en tiempo real.{" "}
           <span>
             GESTYA permite visualizar el estado de la flota desde diferentes
             tipos de mapas, planificar rutas y acceder a reportes detallados

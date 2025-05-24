@@ -17,7 +17,7 @@ const SupportSection = () => {
             protección de la información.
           </p>
           <p className={styles.number}>0800-333-GESTYA (4378)</p>
-          <Link href="" className="button-primary">
+          <Link href="/contacto" className="button-primary">
             Solicitar información
           </Link>
         </div>

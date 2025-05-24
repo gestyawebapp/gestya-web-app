@@ -92,6 +92,7 @@ ul {
 .button-secondary,
 .button-info,
 .button-functionality {
+  border: 0;
   border-radius: 0.25rem;
   cursor: pointer;
   font-weight: var(--font-weight-bold);

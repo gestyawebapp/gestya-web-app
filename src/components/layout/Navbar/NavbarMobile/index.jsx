@@ -277,7 +277,7 @@ const NavbarMobile = () => {
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.small}`}>
-            <Link href={"/"} className={`button-primary`}>
+            <Link href={"/cotiza"} className={`button-primary`}>
               Cotizá ahora
             </Link>
           </li>

@@ -1,0 +1,22 @@
+.layout {
+  padding: calc(var(--header-mobile-height) + 5rem) 0.75rem 5rem 0.75rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.buttons button:disabled {
+  background-color: var(--gray-300);
+  border: 0;
+  color: var(--gray-600);
+  cursor: auto;
+}
+
+@media (min-width: 1200px) {
+  .layout {
+    padding: calc(var(--header-desktop-height) + 5rem) 3.75rem 5rem 3.75rem;
+  }
+}

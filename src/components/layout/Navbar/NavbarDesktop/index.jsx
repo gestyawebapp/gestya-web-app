@@ -208,7 +208,7 @@ const NavbarDesktop = () => {
               Contacto
             </Link>
           </li>
-          <Link href={"/"} className={`button-primary ${styles.small}`}>
+          <Link href={"/cotiza"} className={`button-primary ${styles.small}`}>
             Cotizá ahora
           </Link>
         </ul>

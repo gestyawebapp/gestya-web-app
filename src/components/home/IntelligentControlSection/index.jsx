@@ -41,7 +41,7 @@ const IntelligentControlSection = () => {
             para monitorear flotas en tiempo real. Con soporte 24/7 en Atención
             al Cliente y Servicios Oficiales en todo el país.
           </p>
-          <Link href="" className="button-primary">
+          <Link href="/cotiza" className="button-primary">
             Quiero instalar GESTYA en mi flota
           </Link>
         </div>

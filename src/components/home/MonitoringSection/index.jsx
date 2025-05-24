@@ -43,7 +43,7 @@ const MonitoringSection = () => {
         <source media="(min-width: 992px)" srcSet={desktop} />
         <img {...rest} alt={rest.alt} />
       </picture>
-      <Link href="" className="button-secondary">
+      <Link href="/cotiza" className="button-secondary">
         Cotizar GESTYA para mi flota
       </Link>
     </section>

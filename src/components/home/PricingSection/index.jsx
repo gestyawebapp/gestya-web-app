@@ -37,7 +37,7 @@ const PricingSection = () => {
           seguimiento satelital de flotas y gestión de datos remotos de
           Argentina.
         </p>
-        <Link href="#" className="button-primary">
+        <Link href="/cotiza" className="button-primary">
           COTIZÁ AHORA
         </Link>
       </div>

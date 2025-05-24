@@ -3,52 +3,89 @@
 import { toastError, toastSuccess } from "@/utils/alerts";
 import { ContactFormSchema } from "@/utils/definitions";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
+import { Argentina } from "@/components/icons/Argentina";
 
 const ContactForm = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const [utmParams, setUtmParams] = useState({});
+
+  useEffect(() => {
+    const utms = {
+      Origen_de_la_Campa_a: searchParams.get("utm_source") || "",
+      Medio_de_la_Campa_a: searchParams.get("utm_medium") || "",
+      Nombre_de_la_Campa_a: searchParams.get("utm_campaign") || "",
+      T_rmino_de_la_Campa_a: searchParams.get("utm_term") || "",
+      utm_content: searchParams.get("utm_content") || "",
+    };
+    setUtmParams(utms);
+  }, [searchParams]);
 
   const {
     formState: { errors },
+    watch,
     handleSubmit,
     register,
   } = useForm({
     resolver: zodResolver(ContactFormSchema),
   });
 
+  const provincia = watch("provincia");
+
   const onSubmit = async (data) => {
+    console.log(data);
+
+    console.log("Errores de formulario", errors); // Errores en el form
+
+    const currentUrl =
+      typeof window !== "undefined" ? window.location.href : ""; // Obtengo la URL para el payload
+
+    const fullPayload = {
+      First_Name: data.nombre,
+      Last_Name: data.apellido,
+      Email: data.email,
+      Mobile: `+54${data.telefono}`,
+      Persona_Provincia: data.provincia,
+      Mensaje: data.mensaje,
+      Layout: "5851273000000517156",
+      Lead_Status: "No contactado",
+      Lead_Source: "Formulario Web",
+      URL_de_la_Campa_a: currentUrl,
+      ...utmParams,
+    };
+
+    console.log(fullPayload);
+
     try {
-      console.log(data);
-
-      console.log("Errores de formulario", errors); // Errores en el form
-
       /* handleSubmit ya valida el form (según schema definido en Zod) por lo que no es necesario utilizar trigger() para validar manualmente */
-
       /* Si la validación fue exitosa, hago el POST */
+      const res = await fetch("/api/zoho/create-lead", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(fullPayload),
+      });
 
-      // const response = await fetch("/api/auth/register", {
-      //   headers: { "Content-Type": "application/json" },
-      //   method: "POST",
-      //   body: JSON.stringify(data),
-      // });
+      const result = await res.json();
 
-      // const result = await response.json();
+      if (!res.ok) {
+        return toastError(
+          3000,
+          "Error al enviar",
+          result.error || "Zoho rechazó los datos"
+        );
+      }
 
-      // if (!response.ok) {
-      //   return toastError(3000, "Error en el registro", result.error);
-      // }
-
-      // toastSuccess(
-      //   3000,
-      //   result.message,
-      //   `Bienvenido, ya puedes iniciar sesión`
-      // );
-
-      // router.push("/auth/login");
+      toastSuccess(3000, "¡Gracias!", "Tu consulta fue enviada correctamente");
+      router.push("/contacto/gracias");
     } catch (err) {
-      toastError(3000, "Error al registrarse", err.message);
+      toastError(3000, "Error inesperado", err.message);
     }
   };
 
@@ -67,12 +104,24 @@ const ContactForm = () => {
       </div>
       <div className={styles.formCustomError}>{errors?.email?.message}</div>
       <div className={styles.formRow}>
-        <input {...register("telefono")} placeholder="Teléfono*" />
+        <div className={styles.prefix}>
+          <Argentina size={36} />
+          <span>+54</span>
+          <input
+            {...register("telefono")}
+            placeholder="Ej: 2231234567"
+            inputMode="numeric"
+          />
+        </div>
       </div>
       <div className={styles.formCustomError}>{errors?.telefono?.message}</div>
       <div className={styles.formRow}>
-        <select {...register("provincia")} defaultValue="">
-          <option value="" disabled>
+        <select
+          {...register("provincia")}
+          defaultValue=""
+          style={{ color: !provincia && "#333333" }}
+        >
+          <option value="" disabled hidden>
             Provincia*
           </option>
           <option value="Buenos Aires">Buenos Aires</option>
