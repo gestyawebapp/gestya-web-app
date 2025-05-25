@@ -102,28 +102,56 @@ const NavbarMobile = () => {
             >
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
-                  <Link href="/funcionalidades/seguimiento-de-vehiculos/gestion">
+                  <Link
+                    href="/funcionalidades/seguimiento-de-vehiculos/gestion"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Seguimiento de Vehículos</h4>
                     <ArrowRight size={20} />
                     <span>Gestión</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/seguimiento-de-vehiculos/logistica">
+                  <Link
+                    href="/funcionalidades/seguimiento-de-vehiculos/logistica"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Seguimiento de Vehículos</h4>
                     <ArrowRight size={20} />
                     <span>Logística</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/seguimiento-de-vehiculos/planificacion">
+                  <Link
+                    href="/funcionalidades/seguimiento-de-vehiculos/planificacion"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Seguimiento de Vehículos</h4>
                     <ArrowRight size={20} />
                     <span>Planificación</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/seguimiento-de-vehiculos/alarmas">
+                  <Link
+                    href="/funcionalidades/seguimiento-de-vehiculos/alarmas"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Seguimiento de Vehículos</h4>
                     <ArrowRight size={20} />
                     <span>Alarmas</span>
@@ -132,14 +160,28 @@ const NavbarMobile = () => {
               </ul>
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
-                  <Link href="/funcionalidades/ahorro-de-combustible/eco-drive">
+                  <Link
+                    href="/funcionalidades/ahorro-de-combustible/eco-drive"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Ahorro de combustible</h4>
                     <ArrowRight size={20} />
                     <span>Eco Drive</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/ahorro-de-combustible/cargas-de-combustible">
+                  <Link
+                    href="/funcionalidades/ahorro-de-combustible/cargas-de-combustible"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Ahorro de combustible</h4>
                     <ArrowRight size={20} />
                     <span>Cargas de combustible</span>
@@ -148,21 +190,42 @@ const NavbarMobile = () => {
               </ul>
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
-                  <Link href="/funcionalidades/control-y-mantenimiento/horas-de-marcha">
+                  <Link
+                    href="/funcionalidades/control-y-mantenimiento/horas-de-marcha"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Control y Mantenimiento</h4>
                     <ArrowRight size={20} />
                     <span>Horas de Marcha</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/control-y-mantenimiento/scoring">
+                  <Link
+                    href="/funcionalidades/control-y-mantenimiento/scoring"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Control y Mantenimiento</h4>
                     <ArrowRight size={20} />
                     <span>Scoring</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/funcionalidades/control-y-mantenimiento/wifi">
+                  <Link
+                    href="/funcionalidades/control-y-mantenimiento/wifi"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>Control y Mantenimiento</h4>
                     <ArrowRight size={20} />
                     <span>Wifi</span>
@@ -193,21 +256,42 @@ const NavbarMobile = () => {
             >
               <ul className={`${styles.column} ${styles.integrations}`}>
                 <li>
-                  <Link href="/integraciones/vigia/calibrador-de-neumaticos">
+                  <Link
+                    href="/integraciones/vigia/calibrador-de-neumaticos"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>VIGIA</h4>
                     <ArrowRight size={20} />
                     <span>Calibrador de Neumáticos</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/integraciones/vigia/protector-de-motor">
+                  <Link
+                    href="/integraciones/vigia/protector-de-motor"
+                    onClick={() => {
+                      setIsNavbarOpen(false);
+                      setIsFunctionalitiesMenuOpen(false);
+                      setIsIntegrationsMenuOpen(false);
+                    }}
+                  >
                     <h4>VIGIA</h4>
                     <ArrowRight size={20} />
                     <span>Protector de Motor</span>
                   </Link>
                 </li>
               </ul>
-              <ul className={`${styles.column} ${styles.integrations}`}>
+              <ul
+                className={`${styles.column} ${styles.integrations}`}
+                onClick={() => {
+                  setIsNavbarOpen(false);
+                  setIsFunctionalitiesMenuOpen(false);
+                  setIsIntegrationsMenuOpen(false);
+                }}
+              >
                 <li>
                   <Link href="/integraciones/vitran/eco-drive">
                     <h4>VITRAN</h4>

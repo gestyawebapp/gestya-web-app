@@ -38,10 +38,6 @@ const ContactForm = () => {
   const provincia = watch("provincia");
 
   const onSubmit = async (data) => {
-    console.log(data);
-
-    console.log("Errores de formulario", errors); // Errores en el form
-
     const currentUrl =
       typeof window !== "undefined" ? window.location.href : ""; // Obtengo la URL para el payload
 

@@ -82,8 +82,6 @@ function CotizaLayoutInner({ children }) {
     setDisplayedPath(pathname);
   }, [pathname]);
 
-  console.log(formData);
-
   return (
     <div className={styles.layout}>
       {pathname === "/cotiza/gracias" ? (

@@ -23,6 +23,7 @@ const HeroSection = () => {
           width={1055}
           height={773}
           alt=""
+          priority={true}
         />
       </div>
     </section>

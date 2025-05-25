@@ -20,8 +20,6 @@ const variants = {
 };
 
 const Paso1 = () => {
-  console.log(process.env.NODE_ENV);
-
   const { formData, updateForm } = useCotiza();
   const [selectedOptions, setSelectedOptions] = useState(formData.paso1 || []);
 
