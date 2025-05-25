@@ -173,11 +173,7 @@ const NavbarDesktop = () => {
             </motion.div>
           </motion.li>
           <li className={styles.navItem}>
-            <Link
-              href={"https://gestya.com/servicios-oficiales/"}
-              className={`${styles.navLink}`}
-              target="_blank"
-            >
+            <Link href={"/servicios-oficiales"} className={`${styles.navLink}`}>
               Servicios Oficiales
             </Link>
           </li>

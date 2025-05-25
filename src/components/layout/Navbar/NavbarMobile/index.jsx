@@ -304,8 +304,7 @@ const NavbarMobile = () => {
           </motion.li>
           <li className={styles.navItem}>
             <Link
-              href={"https://gestya.com/servicios-oficiales/"}
-              target="_blank"
+              href={"/servicios-oficiales"}
               onClick={() => {
                 setIsNavbarOpen(false);
                 setIsFunctionalitiesMenuOpen(false);
