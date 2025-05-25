@@ -1,6 +1,7 @@
 "use client";
 
 import { toastError, toastSuccess } from "@/utils/alerts";
+import { Argentina } from "@/components/icons/Argentina";
 import { ContactFormSchema } from "@/utils/definitions";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useSearchParams } from "next/navigation";
@@ -8,7 +9,6 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
-import { Argentina } from "@/components/icons/Argentina";
 
 const ContactForm = () => {
   const router = useRouter();

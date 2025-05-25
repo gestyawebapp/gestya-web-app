@@ -11,6 +11,7 @@ import { Agro } from "@/components/icons/Agro";
 import { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
 
 const variants = {
   initial: { opacity: 0, x: 50 },
@@ -68,33 +69,35 @@ const Paso1 = () => {
   ];
 
   return (
-    <motion.div
-      variants={variants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      transition={{ duration: 0.3 }}
-    >
-      <p className={styles.title}>¡Empecemos!</p>
-      <p className={styles.subtitle}>
-        Seleccioná el tipo de vehículo de tu flota
-      </p>
-      <p className={styles.subtitle}>Podér seleccionar más de una opción</p>
-      <div className={styles.container}>
-        {options.map(({ label, Icon }) => (
-          <div
-            key={label}
-            className={`${styles.box} ${
-              selectedOptions.includes(label) ? styles.active : ""
-            }`}
-            onClick={() => toggleOption(label)}
-          >
-            <Icon size={100} />
-            <span>{label}</span>
-          </div>
-        ))}
-      </div>
-    </motion.div>
+    <Suspense fallback={<div>Cargando...</div>}>
+      <motion.div
+        variants={variants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 0.3 }}
+      >
+        <p className={styles.title}>¡Empecemos!</p>
+        <p className={styles.subtitle}>
+          Seleccioná el tipo de vehículo de tu flota
+        </p>
+        <p className={styles.subtitle}>Podér seleccionar más de una opción</p>
+        <div className={styles.container}>
+          {options.map(({ label, Icon }) => (
+            <div
+              key={label}
+              className={`${styles.box} ${
+                selectedOptions.includes(label) ? styles.active : ""
+              }`}
+              onClick={() => toggleOption(label)}
+            >
+              <Icon size={100} />
+              <span>{label}</span>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </Suspense>
   );
 };
 

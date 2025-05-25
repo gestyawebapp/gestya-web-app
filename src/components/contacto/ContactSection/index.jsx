@@ -1,5 +1,6 @@
 import ContactForm from "../ContactForm";
 import styles from "./styles.module.css";
+import { Suspense } from "react";
 import Image from "next/image";
 
 const ContactSection = () => {
@@ -74,7 +75,9 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <Suspense fallback={<div>Cargando...</div>}>
+        <ContactForm />
+      </Suspense>
     </section>
   );
 };
