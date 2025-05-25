@@ -39,11 +39,7 @@ const CommercializationSection = () => {
             comercializan GESTYA. Ofrecé a tus clientes una solución confiable
             para optimizar sus operaciones y eficiencia.
           </p>
-          <Link
-            href="https://gestya.com/servicios-oficiales/"
-            target="_blank"
-            className="button-primary"
-          >
+          <Link href="/servicios-oficiales" className="button-primary">
             Quiero ser Servicio Oficial COLVEN
           </Link>
         </div>

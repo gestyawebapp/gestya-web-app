@@ -74,12 +74,7 @@ const Footer = () => {
               <Link href={"/integraciones"}>Integraciones</Link>
             </li>
             <li>
-              <Link
-                href={"https://gestya.com/servicios-oficiales/"}
-                target="_blank"
-              >
-                Servicios Oficiales
-              </Link>
+              <Link href={"/servicios-oficiales"}>Servicios Oficiales</Link>
             </li>
             <li>
               <Link href={"/soluciones"}>Soluciones</Link>
