@@ -1,21 +1,23 @@
-import IntegrationSpecifics from "@/components/integraciones/IntegrationSpecifics";
-import { integracionesData } from "@/app/integraciones/integracionesData";
+import CalibradorDeNeumaticos from "@/components/integraciones/subsections/vigia/CalibradorDeNeumaticos";
+import ProtectorDeMotor from "@/components/integraciones/subsections/vigia/ProtectorDeMotor";
+import EcoDrive from "@/components/integraciones/subsections/vitran/EcoDrive";
 import { notFound } from "next/navigation";
 
-export function generateStaticParams() {
-  return Object.keys(integracionesData).map((key) => {
-    const [section, subsection] = key.split("/");
-    return { section, subsection };
-  });
-}
+const componentMap = {
+  "vigia/protector-de-motor": ProtectorDeMotor,
+  "vigia/calibrador-de-neumaticos": CalibradorDeNeumaticos,
+  "vitran/eco-drive": EcoDrive,
+};
 
 const IntegracionesSubsectionPage = ({ params }) => {
   const { section, subsection } = params;
-  const data = integracionesData[`${section}/${subsection}`];
+  const key = `${section}/${subsection}`;
 
-  if (!data) return notFound();
+  const Component = componentMap[key];
 
-  return <IntegrationSpecifics {...data} />;
+  if (!Component) return notFound();
+
+  return <Component />;
 };
 
 export default IntegracionesSubsectionPage;

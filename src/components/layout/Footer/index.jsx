@@ -91,6 +91,9 @@ const Footer = () => {
               <Link href={"/contacto"}>Contacto</Link>
             </li>
             <li>
+              <Link href={"/cotiza"}>Cotizá ahora</Link>
+            </li>
+            <li>
               <Link href={"/privacidad"}>Privacidad</Link>
             </li>
           </ul>
