@@ -6,7 +6,7 @@ const HeroSection = () => {
   const common = {
     alt: "Vehículos representando una logística de transporte eficiente",
     sizes:
-      "(max-width: 374px) 100vw, (max-width: 575px) 375px, (max-width: 1399px) 100vw, 1400px",
+      "(max-width: 374px) 100vw, (max-width: 767px) 375px, (max-width: 1399px) 100vw, 1400px",
   };
   const {
     props: { srcSet: desktop },
@@ -39,8 +39,8 @@ const HeroSection = () => {
         </Link>
       </div>
       <picture className={styles.imageWrapper}>
-        <source media="(max-width: 575px)" srcSet={mobile} />
-        <source media="(min-width: 576px)" srcSet={desktop} />
+        <source media="(max-width: 767px)" srcSet={mobile} />
+        <source media="(min-width: 768px)" srcSet={desktop} />
         <img {...rest} alt={rest.alt} />
       </picture>
     </section>

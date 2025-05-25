@@ -2,8 +2,8 @@ import Swal from "sweetalert2";
 
 export const toastError = (timer, title, text) => {
   Swal.fire({
-    background: `#f1eaea`,
-    color: `#000`,
+    background: `rgba(28, 25, 25, 0.95)`,
+    color: `#fff`,
     customClass: { timerProgressBar: "toast-progress-dark" },
     icon: "error",
     iconColor: "#b30a0a",

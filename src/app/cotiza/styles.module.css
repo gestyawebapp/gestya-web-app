@@ -2,6 +2,35 @@
   padding: calc(var(--header-mobile-height) + 5rem) 0.75rem 5rem 0.75rem;
 }
 
+.title,
+.subtitle,
+.message {
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.title {
+  color: var(--orange-900);
+  font-size: var(--font-size-2xl);
+  margin-bottom: 1rem;
+}
+
+.subtitle,
+.message {
+  line-height: 150%;
+  margin: 0 auto 0.5rem auto;
+}
+
+.subtitle {
+  font-size: var(--font-size-md);
+  max-width: 400px;
+}
+
+.message {
+  font-size: var(--font-size-2xl);
+  max-width: 900px;
+}
+
 .buttons {
   display: flex;
   gap: 1rem;

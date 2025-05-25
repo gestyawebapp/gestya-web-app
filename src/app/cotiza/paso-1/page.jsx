@@ -20,6 +20,8 @@ const variants = {
 };
 
 const Paso1 = () => {
+  console.log(process.env.NODE_ENV);
+
   const { formData, updateForm } = useCotiza();
   const [selectedOptions, setSelectedOptions] = useState(formData.paso1 || []);
 
@@ -56,11 +58,6 @@ const Paso1 = () => {
       <Suspense fallback={null}>
         <UTMGrabber />
       </Suspense>
-      ;<p className={styles.title}>¡Empecemos!</p>
-      <p className={styles.subtitle}>
-        Seleccioná el tipo de vehículo de tu flota
-      </p>
-      <p className={styles.subtitle}>Podér seleccionar más de una opción</p>
       <div className={styles.container}>
         {options.map(({ label, Icon }) => (
           <div

@@ -51,11 +51,6 @@ const Paso3 = () => {
       exit="exit"
       transition={{ duration: 0.3 }}
     >
-      <p className={styles.title}>¡Sigamos!</p>
-      <p className={styles.subtitle}>
-        ¿Hay una solución específica que necesitás?
-      </p>
-      <p className={styles.subtitle}>Podér seleccionar más de una opción</p>
       <div className={styles.container}>
         {options.map(({ label, Icon }) => (
           <div

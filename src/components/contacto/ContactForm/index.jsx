@@ -59,8 +59,6 @@ const ContactForm = () => {
       ...utmParams,
     };
 
-    console.log(fullPayload);
-
     try {
       /* handleSubmit ya valida el form (según schema definido en Zod) por lo que no es necesario utilizar trigger() para validar manualmente */
       /* Si la validación fue exitosa, hago el POST */
@@ -75,14 +73,20 @@ const ContactForm = () => {
       const result = await res.json();
 
       if (!res.ok) {
-        return toastError(
+        toastError(
           3000,
           "Error al enviar",
-          result.error || "Zoho rechazó los datos"
+          result.error || "Intente nuevamente más tarde"
         );
+        router.push("/");
+        return;
       }
 
-      toastSuccess(3000, "¡Gracias!", "Tu consulta fue enviada correctamente");
+      toastSuccess(
+        3000,
+        "Formulario completo",
+        "Tu consulta fue enviada correctamente"
+      );
       router.push("/contacto/gracias");
     } catch (err) {
       toastError(3000, "Error inesperado", err.message);

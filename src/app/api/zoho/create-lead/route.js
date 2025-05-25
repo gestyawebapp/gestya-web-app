@@ -14,13 +14,12 @@ export async function POST(req) {
   const {
     ZOHO_CLIENT_ID,
     ZOHO_CLIENT_SECRET,
-    // ZOHO_ACCESS_TOKEN,
     ZOHO_REFRESH_TOKEN,
     ZOHO_API_DOMAIN,
     ZOHO_OAUTH_DOMAIN,
   } = process.env;
 
-  // 1) Obtener nuevo access_token con refresh token
+  // Esta función permite obtener nuevo access_token a partir del refresh token
   const refreshTokenUrl = new URL(
     "/oauth/v2/token",
     ZOHO_OAUTH_DOMAIN
@@ -59,7 +58,7 @@ export async function POST(req) {
 
   const accessToken = tokenData.access_token;
 
-  // 2) Crear lead con nuevo access_token
+  // Esta función permite crear la nueva lead con el access_token
   const leadUrl = new URL("/crm/v4/Leads", ZOHO_API_DOMAIN).toString();
 
   const leadRes = await fetch(leadUrl, {

@@ -1,0 +1,61 @@
+.wrapper {
+  margin: 1.5rem auto 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.steps {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.stepWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.lineContainer {
+  left: 20px; /* mitad del ancho del primer círculo, me permite alinearla al centro */
+  height: 4px;
+  position: absolute;
+  right: 20px; /* mitad del ancho del último círculo, me permite alinearla al centro */
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 40px); /* 40px = ancho de un círculo */
+  z-index: 0;
+}
+
+.baseLine {
+  background-color: var(--gray-300);
+  height: 4px;
+  width: 100%;
+}
+
+.fillLine {
+  background-color: var(--orange-900);
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.circle {
+  align-items: center;
+  background-color: var(--gray-300);
+  border-radius: 50%;
+  color: #6b7280;
+  display: flex;
+  font-weight: bold;
+  height: 40px;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  width: 40px;
+}
+
+.circle.active {
+  background-color: var(--orange-900);
+  color: white;
+}

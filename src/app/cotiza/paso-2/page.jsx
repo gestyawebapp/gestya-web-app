@@ -37,10 +37,6 @@ const Paso2 = () => {
       exit="exit"
       transition={{ duration: 0.3 }}
     >
-      <p className={styles.title}>¡Muy bien!</p>
-      <p className={styles.subtitle}>
-        Contanos cuántos vehículos tiene tu flota
-      </p>
       <div className={styles.container}>
         {opciones.map(({ value, label }) => (
           <label

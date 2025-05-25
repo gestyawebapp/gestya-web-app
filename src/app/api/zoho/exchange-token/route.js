@@ -1,5 +1,13 @@
-// /app/api/zoho/exchange-token/route.js
 export async function POST(req) {
+  if (process.env.NODE_ENV === "production") {
+    return new Response(
+      JSON.stringify({
+        error: "Este endpoint no está disponible en producción",
+      }),
+      { status: 403 }
+    );
+  }
+
   const body = await req.json();
   const { grant_token } = body;
 
@@ -38,7 +46,6 @@ export async function POST(req) {
       });
     }
 
-    // Podés guardar el refresh_token en una base de datos o archivo .env para uso posterior
     return new Response(JSON.stringify(data), { status: 200 });
   } catch (err) {
     return new Response(

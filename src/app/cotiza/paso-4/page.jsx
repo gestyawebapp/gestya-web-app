@@ -1,11 +1,11 @@
 "use client";
 
+import { toastError, toastSuccess } from "@/utils/alerts";
 import { Argentina } from "@/components/icons/Argentina";
 import { CotizaFormSchema } from "@/utils/definitions";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { isPasoCompleto } from "@/utils/validations";
 import { useCotiza } from "@/context/CotizaContext";
-import { toastError } from "@/utils/alerts";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
@@ -84,15 +84,23 @@ const Paso4 = () => {
       const result = await res.json();
 
       if (!res.ok) {
-        return toastError(
+        toastError(
           3000,
           "Error al enviar",
-          result.error || "Hubo un problema al enviar el formulario"
+          result.error ||
+            "Hubo un problema al enviar el formulario, intente más tarde"
         );
+        router.push("/cotiza");
+        return;
       }
 
       localStorage.removeItem("utms"); // Limpio localStorage
 
+      toastSuccess(
+        3000,
+        "Formulario completo",
+        "La información ha sido enviada con éxito"
+      );
       router.push("/cotiza/gracias");
     } catch (err) {
       toastError(3000, "Error inesperado", err.message);
@@ -107,8 +115,6 @@ const Paso4 = () => {
       exit="exit"
       transition={{ duration: 0.3 }}
     >
-      <p className={styles.title}>¡Último paso!</p>
-      <p className={styles.subtitle}>Completá con tus datos para contactarte</p>
       <form
         id="form-cotiza"
         onSubmit={handleSubmit(onSubmit)}

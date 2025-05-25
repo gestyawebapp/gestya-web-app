@@ -1,16 +1,39 @@
 "use client";
 
 import { CotizaProvider, useCotiza } from "@/context/CotizaContext";
+import { ProgressBar } from "@/components/layout/ProgressBar";
 import { usePathname, useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const steps = [
   "/cotiza/paso-1",
   "/cotiza/paso-2",
   "/cotiza/paso-3",
   "/cotiza/paso-4",
+];
+
+const stepTitles = [
+  {
+    title: "¡Empecemos!",
+    subtitle:
+      "Seleccioná el tipo de vehículo de tu flota. Podés seleccionar más de una opción",
+  },
+  {
+    title: "¡Muy bien!",
+    subtitle: "Contanos cuántos vehículos tiene tu flota",
+  },
+  {
+    title: "¡Sigamos!",
+    subtitle:
+      "¿Hay una solución específica que necesitás? Podés seleccionar más de una opción",
+  },
+  {
+    title: "¡Último paso!",
+    subtitle: "Completá con tus datos para contactarte",
+  },
 ];
 
 function CotizaLayoutInner({ children }) {
@@ -63,6 +86,22 @@ function CotizaLayoutInner({ children }) {
 
   return (
     <div className={styles.layout}>
+      {pathname === "/cotiza/gracias" ? (
+        <>
+          <p className={styles.message}>
+            ¡Gracias! Pronto uno de los comerciales se contactará con vos para
+            acercarte una solución personalizada para tus necesidades
+          </p>
+        </>
+      ) : currentStepIndex >= 0 && stepTitles[currentStepIndex] ? (
+        <>
+          <p className={styles.title}>{stepTitles[currentStepIndex].title}</p>
+          <p className={styles.subtitle}>
+            {stepTitles[currentStepIndex].subtitle}
+          </p>
+        </>
+      ) : null}
+      <ProgressBar />
       <AnimatePresence mode="wait">
         <motion.div
           key={displayedPath}
@@ -74,28 +113,38 @@ function CotizaLayoutInner({ children }) {
           {children}
         </motion.div>
       </AnimatePresence>
-
       <div className={styles.buttons}>
-        <button
-          className="button-primary"
-          onClick={() => goToStep(currentStepIndex - 1)}
-          disabled={currentStepIndex === 0}
-        >
-          Anterior
-        </button>
-
-        {currentStepIndex === steps.length - 1 ? (
-          <button className="button-primary" type="submit" form="form-cotiza">
-            Enviar
-          </button>
+        {!pathname.startsWith("/cotiza/gracias") ? (
+          <>
+            <button
+              className="button-primary"
+              onClick={() => goToStep(currentStepIndex - 1)}
+              disabled={currentStepIndex === 0}
+            >
+              Anterior
+            </button>
+            {currentStepIndex === steps.length - 1 ? (
+              <button
+                className="button-primary"
+                type="submit"
+                form="form-cotiza"
+              >
+                Enviar
+              </button>
+            ) : (
+              <button
+                className="button-primary"
+                onClick={() => goToStep(currentStepIndex + 1)}
+                disabled={!isStepValid(currentStepIndex)}
+              >
+                Siguiente
+              </button>
+            )}
+          </>
         ) : (
-          <button
-            className="button-primary"
-            onClick={() => goToStep(currentStepIndex + 1)}
-            disabled={!isStepValid(currentStepIndex)}
-          >
-            Siguiente
-          </button>
+          <Link className="button-primary" href={"/"}>
+            Volver al Home
+          </Link>
         )}
       </div>
     </div>

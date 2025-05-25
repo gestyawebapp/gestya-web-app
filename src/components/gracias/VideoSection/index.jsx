@@ -1,5 +1,6 @@
 "use client";
 
+import { Reproducir } from "@/components/icons/Reproducir";
 import styles from "./styles.module.css";
 import Link from "next/link";
 
@@ -25,7 +26,17 @@ const VideoSection = () => {
           Ir a Youtube
         </Link>
       </div>
-      <div className={styles.videoWrapper}></div>
+      <div className={styles.videoWrapper}>
+        <div className={styles.videoContainer}>
+          <Reproducir className={styles.playIcon} />
+          <iframe
+            src="https://www.youtube.com/embed/GteKtFJgj6Y"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </section>
   );
 };

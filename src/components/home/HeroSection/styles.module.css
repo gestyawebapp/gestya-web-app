@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .imageWrapper {
     aspect-ratio: 3 / 1;
     max-width: var(--max-container-width);

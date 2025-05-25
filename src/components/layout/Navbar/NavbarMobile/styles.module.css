@@ -119,12 +119,14 @@
 
 .column.integrations:first-of-type h4 {
   background-color: var(--yellow-900);
+  border-radius: 0.25rem;
   margin: 0;
   padding: 0.25em;
 }
 
 .column.integrations:nth-of-type(2) h4 {
   background-color: var(--green-300);
+  border-radius: 0.25rem;
   margin: 0;
   padding: 0.25em;
 }
