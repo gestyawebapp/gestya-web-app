@@ -67,6 +67,8 @@ const ContactForm = () => {
         return;
       }
 
+      localStorage.removeItem("utms"); // Limpio localStorage
+
       toastSuccess(
         3000,
         "Formulario completo",
