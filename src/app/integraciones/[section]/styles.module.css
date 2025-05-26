@@ -1,5 +1,6 @@
 .linksWrapper {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   margin: 0 auto 1rem auto;
   max-width: fit-content;
@@ -13,6 +14,7 @@
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
   padding: 0.5em 1.25em;
+  text-align: center;
 }
 
 .link[data-section="vigia"] {
@@ -34,4 +36,10 @@
 
 .link[data-section="vitran"].active {
   background-color: var(--green-300);
+}
+
+@media (min-width: 576px) {
+  .linksWrapper {
+    flex-direction: row;
+  }
 }

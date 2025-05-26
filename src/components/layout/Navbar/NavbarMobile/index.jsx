@@ -293,10 +293,10 @@ const NavbarMobile = () => {
                 }}
               >
                 <li>
-                  <Link href="/integraciones/vitran/eco-drive">
+                  <Link href="/integraciones/vitran/monitor-de-presion">
                     <h4>VITRAN</h4>
                     <ArrowRight size={20} />
-                    <span>Eco Drive</span>
+                    <span>Monitor de presión</span>
                   </Link>
                 </li>
               </ul>

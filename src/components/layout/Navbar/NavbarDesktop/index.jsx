@@ -164,9 +164,9 @@ const NavbarDesktop = () => {
               </ul>
               <ul className={`${styles.column} ${styles.integrations}`}>
                 <li>
-                  <Link href="/integraciones/vitran/eco-drive">
+                  <Link href="/integraciones/vitran/monitor-de-presion">
                     <h4>VITRAN</h4>
-                    <span>Eco Drive</span>
+                    <span>Monitor de presión</span>
                   </Link>
                 </li>
               </ul>
