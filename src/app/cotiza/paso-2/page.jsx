@@ -12,10 +12,10 @@ const variants = {
 };
 
 const opciones = [
-  { value: "De 1 a 5 unidades", label: "De 1 a 5 unidades" },
-  { value: "De 10 a 20 unidades", label: "De 10 a 20 unidades" },
-  { value: "De 20 a 50 unidades", label: "De 20 a 50 unidades" },
-  { value: "De 50 a 100 unidades", label: "De 50 a 100 unidades" },
+  { value: "De 1 a 10 unidades", label: "De 1 a 10 unidades" },
+  { value: "De 11 a 20 unidades", label: "De 11 a 20 unidades" },
+  { value: "De 21 a 50 unidades", label: "De 21 a 50 unidades" },
+  { value: "De 51 a 100 unidades", label: "De 51 a 100 unidades" },
   { value: "Más de 100 unidades", label: "Más de 100 unidades" },
 ];
 
