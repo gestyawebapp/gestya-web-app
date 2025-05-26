@@ -89,7 +89,7 @@ const Alarmas = () => {
               height={32}
               alt=""
             />
-            <span>Previsión de incidentes operativos</span>
+            <span>Previsión de incidentes operativos.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -100,7 +100,7 @@ const Alarmas = () => {
               height={32}
               alt=""
             />
-            <span>Trazabilidad de eventos y decisiones tomadas</span>
+            <span>Trazabilidad de eventos y decisiones tomadas.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -111,7 +111,7 @@ const Alarmas = () => {
               height={32}
               alt=""
             />
-            <span>Visualización de las alarmas desde la aplicación</span>
+            <span>Visualización de las alarmas desde la aplicación.</span>
           </div>
         </div>
         <div className={styles.container}>
@@ -125,7 +125,7 @@ const Alarmas = () => {
               height={32}
               alt=""
             />
-            <span>Notificaciones automáticas de eventos críticos</span>
+            <span>Notificaciones automáticas de eventos críticos.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -136,7 +136,9 @@ const Alarmas = () => {
               height={32}
               alt=""
             />
-            <span>Visualización de alarmas según la prioridad de atención</span>
+            <span>
+              Visualización de alarmas según la prioridad de atención.
+            </span>
           </div>
           <div className={styles.item}>
             <Image
@@ -147,7 +149,7 @@ const Alarmas = () => {
               height={32}
               alt=""
             />
-            <span>Registro histórico de alarmas por vehículo</span>
+            <span>Registro histórico de alarmas por vehículo.</span>
           </div>
         </div>
       </section>

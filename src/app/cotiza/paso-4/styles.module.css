@@ -22,6 +22,15 @@
   width: 100%;
 }
 
+.form select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("/images/keyboard-arrow-down.svg");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+}
+
 .form select option {
   color: #000;
 }

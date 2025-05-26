@@ -72,7 +72,7 @@ const Gestion = () => {
               height={32}
               alt=""
             />
-            <span>Control que evita reparaciones imprevistas</span>
+            <span>Control que evita reparaciones imprevistas.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -83,7 +83,7 @@ const Gestion = () => {
               height={32}
               alt=""
             />
-            <span>Menor tiempo de los vehículos fuera de servicio</span>
+            <span>Menor tiempo de los vehículos fuera de servicio.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -95,7 +95,7 @@ const Gestion = () => {
               alt=""
             />
             <span>
-              Mayor vida útil de la flota y mejor amortización de la inversión
+              Mayor vida útil de la flota y mejor amortización de la inversión.
             </span>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Gestion = () => {
               height={32}
               alt=""
             />
-            <span>Reduce la posibilidad de costos extras por multas </span>
+            <span>Reduce la posibilidad de costos extras por multas.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -127,7 +127,7 @@ const Gestion = () => {
               height={32}
               alt=""
             />
-            <span>Orden administrativo para las tareas diarias</span>
+            <span>Orden administrativo para las tareas diarias.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -138,7 +138,7 @@ const Gestion = () => {
               height={32}
               alt=""
             />
-            <span>Cumplimiento normativo asegurado</span>
+            <span>Cumplimiento normativo asegurado.</span>
           </div>
         </div>
       </section>

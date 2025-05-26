@@ -97,7 +97,7 @@ const Logistica = () => {
               height={32}
               alt=""
             />
-            <span>Registros históricos de recorridos por unidad</span>
+            <span>Registros históricos de recorridos por unidad.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -108,7 +108,7 @@ const Logistica = () => {
               height={32}
               alt=""
             />
-            <span>Visualización de viajes y trayectos diarios</span>
+            <span>Visualización de viajes y trayectos diarios.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -119,7 +119,7 @@ const Logistica = () => {
               height={32}
               alt=""
             />
-            <span>Gráficos y mapas interactivos</span>
+            <span>Gráficos y mapas interactivos.</span>
           </div>
         </div>
         <div className={styles.container}>
@@ -143,7 +143,7 @@ const Logistica = () => {
               height={32}
               alt=""
             />
-            <span>Información actualizada en tiempo real</span>
+            <span>Información actualizada en tiempo real.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -154,7 +154,7 @@ const Logistica = () => {
               height={32}
               alt=""
             />
-            <span>Ubicación de la última posición registrada</span>
+            <span>Ubicación de la última posición registrada.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -165,7 +165,7 @@ const Logistica = () => {
               height={32}
               alt=""
             />
-            <span>Visualización de los trayectos en mapas</span>
+            <span>Visualización de los trayectos en mapas.</span>
           </div>
         </div>
       </section>

@@ -26,6 +26,24 @@ const EcoDrive = () => {
     quality: 80,
     src: "/images/funcionalidades/ahorro-de-combustible/eco-drive/hero-sm.png",
   });
+  const {
+    props: { srcSet: cardsDesktop },
+  } = getImageProps({
+    ...common,
+    width: 2896,
+    height: 1417,
+    quality: 80,
+    src: "/images/funcionalidades/ahorro-de-combustible/eco-drive/cards-xl.png",
+  });
+  const {
+    props: { srcSet: cardsMobile, ...cardsRest },
+  } = getImageProps({
+    ...common,
+    width: 757,
+    height: 861,
+    quality: 80,
+    src: "/images/funcionalidades/ahorro-de-combustible/eco-drive/cards-sm.png",
+  });
 
   return (
     <>
@@ -47,7 +65,6 @@ const EcoDrive = () => {
             Desarrollado para optimizar el mantenimiento y consumo de
             combustible a través de una conducción eficiente.
           </p>
-          <button className={"button-primary"}>Descargar PDF</button>
         </div>
         <picture className={styles.heroImageWrapper}>
           <source media="(max-width: 991px)" srcSet={heroMobile} />
@@ -71,7 +88,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Última posición de los vehículos</span>
+              <span>Última posición de los vehículos.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -82,7 +99,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Velocidad de circulación</span>
+              <span>Velocidad de circulación.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -93,7 +110,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Duración de aceleraciones bruscas</span>
+              <span>Duración de aceleraciones bruscas.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -104,7 +121,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Cantidad de frenadas brucas</span>
+              <span>Cantidad de frenadas brucas.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -115,7 +132,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Tiempo del motor en marcha en ralenti</span>
+              <span>Tiempo del motor en marcha en ralenti.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -126,7 +143,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Excesos de torque, RPM y velocidad</span>
+              <span>Excesos de torque, RPM y velocidad.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -137,7 +154,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Consumo promedio en L/100 KM</span>
+              <span>Consumo promedio en L/100 KM.</span>
             </div>
           </div>
           <div className={styles.container}>
@@ -151,7 +168,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Análisis por flota o vehículo</span>
+              <span>Análisis por flota o vehículo.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -162,7 +179,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Tiempo del vehículo detenido</span>
+              <span>Tiempo del vehículo detenido.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -173,7 +190,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Horas del motor en marcha</span>
+              <span>Horas del motor en marcha.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -184,7 +201,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Tiempo del vehículo en movimiento</span>
+              <span>Tiempo del vehículo en movimiento.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -195,7 +212,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Distancia recorrida en kilómetros</span>
+              <span>Distancia recorrida en kilómetros.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -206,7 +223,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Consumo de combustible</span>
+              <span>Consumo de combustible.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -217,7 +234,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Datos del estado de la flota</span>
+              <span>Datos del estado de la flota.</span>
             </div>
           </div>
           <div className={styles.container}>
@@ -233,7 +250,7 @@ const EcoDrive = () => {
               />
               <span>
                 Informes automáticos con posibilidad de exportar en un archivo
-                excel
+                excel.
               </span>
             </div>
             <div className={styles.item}>
@@ -247,7 +264,7 @@ const EcoDrive = () => {
               />
               <span>
                 Opción para cargar el valor del combustible y controlar el gasto
-                por vehículo
+                por vehículo.
               </span>
             </div>
             <div className={styles.item}>
@@ -261,7 +278,7 @@ const EcoDrive = () => {
               />
               <span>
                 Carga de tickets de combustible para incorporarlas al reporte
-                histórico de la flota
+                histórico de la flota.
               </span>
             </div>
             <div className={styles.item}>
@@ -275,7 +292,7 @@ const EcoDrive = () => {
               />
               <span>
                 Asignación de consumo ideal por cada vehículo para compararlo
-                con el realizado
+                con el realizado.
               </span>
             </div>
             <div className={styles.item}>
@@ -289,11 +306,16 @@ const EcoDrive = () => {
               />
               <span>
                 Rango de velocidad para conocer el tiempo de circulación en
-                periodos preestablecidos
+                periodos preestablecidos.
               </span>
             </div>
           </div>
         </div>
+        <picture className={styles.cardsImageWrapper}>
+          <source media="(max-width: 991px)" srcSet={cardsMobile} />
+          <source media="(min-width: 992px)" srcSet={cardsDesktop} />
+          <img {...cardsRest} alt={cardsRest.alt} />
+        </picture>
       </section>
       <PricingSection />
     </>

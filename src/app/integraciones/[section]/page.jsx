@@ -2,8 +2,8 @@ import { redirect } from "next/navigation";
 import { notFound } from "next/navigation";
 
 const defaultRedirects = {
-  vigia: "protector-de-motor",
-  vitran: "eco-drive",
+  vigia: "calibrador-de-neumaticos",
+  vitran: "monitor-de-presion",
 };
 
 const IntegracionesSectionPage = ({ params }) => {

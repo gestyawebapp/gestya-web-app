@@ -75,7 +75,7 @@
 .container {
   background-color: var(--gray-100);
   border-radius: 0.5rem;
-  max-width: none;
+  max-width: 900px;
   padding: 3em;
   width: 100%;
 }
@@ -104,14 +104,14 @@
 .cardsTitle {
   font-size: var(--font-size-2xl);
   margin-bottom: 1.5rem;
-  max-width: 475px;
+  max-width: 600px;
 }
 
 .cardsText {
   font-size: var(--font-size-md);
   line-height: 150%;
   margin-bottom: 3rem;
-  max-width: 475px;
+  max-width: 600px;
 }
 
 @media (min-width: 1200px) {
@@ -148,10 +148,5 @@
 
   .cardsText {
     max-width: 925px;
-  }
-
-  .container {
-    min-height: 325px;
-    padding: 3em 2em;
   }
 }

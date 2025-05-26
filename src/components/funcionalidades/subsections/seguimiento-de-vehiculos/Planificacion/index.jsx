@@ -93,9 +93,7 @@ const Planificacion = () => {
       </section>
       <section className={styles.section}>
         <div className={styles.container}>
-          <h3 className={styles.subtitle}>
-            GESTYA Planify mejora la logística de los envíos
-          </h3>
+          <h3 className={styles.subtitle}>Mejorá la logística de los envíos</h3>
           <div className={styles.item}>
             <Image
               src={
@@ -107,7 +105,7 @@ const Planificacion = () => {
             />
             <span>
               Trazá hojas de ruta, definí horarios, controlá el avance de las
-              entregas y detectá desvíos
+              entregas y detectá desvíos.
             </span>
           </div>
           <div className={styles.item}>
@@ -121,7 +119,7 @@ const Planificacion = () => {
             />
             <span>
               Mejorá la distribución de los destinos, la asignación de tareas y
-              el control del cumplimiento
+              el control del cumplimiento.
             </span>
           </div>
           <div className={styles.item}>
@@ -133,7 +131,7 @@ const Planificacion = () => {
               height={32}
               alt=""
             />
-            <span>Recibí comentarios del conductor durante el proceso</span>
+            <span>Recibí comentarios del conductor durante el proceso.</span>
           </div>
         </div>
         <div className={styles.container}>
@@ -149,7 +147,7 @@ const Planificacion = () => {
             />
             <span>
               Horarios, asignación de tareas específicas y recorridos para cada
-              integrante del equipo
+              integrante del equipo.
             </span>
           </div>
           <div className={styles.item}>
@@ -163,7 +161,7 @@ const Planificacion = () => {
             />
             <span>
               Importación de ruteos desde otros sistemas para optimizar los
-              recorridos directamente desde la plataforma
+              recorridos directamente desde la plataforma.
             </span>
           </div>
           <div className={styles.item}>
@@ -177,7 +175,7 @@ const Planificacion = () => {
             />
             <span>
               El conductor puede informar avances en tiempo real desde la
-              aplicación
+              aplicación.
             </span>
           </div>
         </div>

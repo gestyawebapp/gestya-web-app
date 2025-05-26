@@ -67,7 +67,7 @@ const HorasDeMarcha = () => {
               height={32}
               alt=""
             />
-            <span>Comprobación de uso ineficiente del combustible</span>
+            <span>Comprobación de uso ineficiente del combustible.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -78,7 +78,7 @@ const HorasDeMarcha = () => {
               height={32}
               alt=""
             />
-            <span>Control sobre tiempo prolongado en ralenti</span>
+            <span>Control sobre tiempo prolongado en ralenti.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -89,7 +89,7 @@ const HorasDeMarcha = () => {
               height={32}
               alt=""
             />
-            <span>Información para mantenimiento preventivo</span>
+            <span>Información para mantenimiento preventivo.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -100,7 +100,7 @@ const HorasDeMarcha = () => {
               height={32}
               alt=""
             />
-            <span>Ahorro de costos al detectar ineficiencias</span>
+            <span>Ahorro de costos al detectar ineficiencias.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -111,7 +111,7 @@ const HorasDeMarcha = () => {
               height={32}
               alt=""
             />
-            <span>Comprensión del uso de cada vehículo</span>
+            <span>Comprensión del uso de cada vehículo.</span>
           </div>
         </div>
         <div className={styles.container}>
@@ -126,7 +126,8 @@ const HorasDeMarcha = () => {
               alt=""
             />
             <span>
-              Medición del consumo promedio por vehículo en relación al uso real
+              Medición del consumo promedio por vehículo en relación al uso
+              real.
             </span>
           </div>
           <div className={styles.item}>
@@ -139,7 +140,7 @@ const HorasDeMarcha = () => {
               alt=""
             />
             <span>
-              Proyección del consumo estimado según los parámetros operativos
+              Proyección del consumo estimado según los parámetros operativos.
             </span>
           </div>
         </div>
@@ -162,9 +163,9 @@ const HorasDeMarcha = () => {
               Principales problemas del motor en ralentí
             </h3>
             <ul className={styles.questionList}>
-              <li>Aumento innecesario del consumo de combustible</li>
-              <li>Desgaste prematuro del motor y sus componentes</li>
-              <li>Tiempo del vehículo improductivo</li>
+              <li>Aumento innecesario del consumo de combustible.</li>
+              <li>Desgaste prematuro del motor y sus componentes.</li>
+              <li>Tiempo del vehículo improductivo.</li>
             </ul>
           </div>
           <div>

@@ -71,6 +71,7 @@ const CargasDeCombustible = () => {
         </p>
         <div className={styles.containerWrapper}>
           <div className={styles.container}>
+            <h3 className={styles.subtitle}>Reportes Automáticos</h3>
             <div className={styles.item}>
               <Image
                 src={
@@ -82,7 +83,7 @@ const CargasDeCombustible = () => {
               />
               <span>
                 Adjuntá documentación propia sobre las cargas para integrarlas
-                al reporte
+                al reporte.
               </span>
             </div>
             <div className={styles.item}>
@@ -96,7 +97,7 @@ const CargasDeCombustible = () => {
               />
               <span>
                 Compará los datos de las cargas con los kilómetros recorridos
-                por cada vehículo
+                por cada vehículo.
               </span>
             </div>
             <div className={styles.item}>
@@ -110,7 +111,7 @@ const CargasDeCombustible = () => {
               />
               <span>
                 Visualizá de manera simple los datos de las cargas, importes de
-                combustible y consumo
+                combustible y consumo.
               </span>
             </div>
             <div className={styles.item}>
@@ -123,7 +124,8 @@ const CargasDeCombustible = () => {
                 alt=""
               />
               <span>
-                Compará el consumo estimado en un período determinado de 30 días
+                Compará el consumo estimado en un período determinado de 30
+                días.
               </span>
             </div>
             <div className={styles.item}>
@@ -137,7 +139,7 @@ const CargasDeCombustible = () => {
               />
               <span>
                 Verificá precios en diferentes estaciones de servicios y su
-                evolución en gráficos
+                evolución en gráficos.
               </span>
             </div>
           </div>
@@ -152,7 +154,7 @@ const CargasDeCombustible = () => {
                 height={32}
                 alt=""
               />
-              <span>Desvío entre consumo promedio y estimado</span>
+              <span>Desvío entre consumo promedio y estimado.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -163,7 +165,7 @@ const CargasDeCombustible = () => {
                 height={32}
                 alt=""
               />
-              <span>Resumen de actividad por conductor y vehículo</span>
+              <span>Resumen de actividad por conductor y vehículo.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -174,7 +176,7 @@ const CargasDeCombustible = () => {
                 height={32}
                 alt=""
               />
-              <span>Validación de cargas en estaciones verificadas</span>
+              <span>Validación de cargas en estaciones verificadas.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -186,7 +188,7 @@ const CargasDeCombustible = () => {
                 alt=""
               />
               <span>
-                Kilómetros recorridos, litros cargados y consumo estimado
+                Kilómetros recorridos, litros cargados y consumo estimado.
               </span>
             </div>
             <div className={styles.item}>
@@ -198,7 +200,7 @@ const CargasDeCombustible = () => {
                 height={32}
                 alt=""
               />
-              <span>Tiempo de permanencia en estaciones de servicio</span>
+              <span>Tiempo de permanencia en estaciones de servicio.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -210,7 +212,7 @@ const CargasDeCombustible = () => {
                 alt=""
               />
               <span>
-                Comparativa de precios e historial de consumo estimado
+                Comparativa de precios e historial de consumo estimado.
               </span>
             </div>
           </div>

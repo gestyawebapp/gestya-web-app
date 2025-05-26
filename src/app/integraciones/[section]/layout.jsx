@@ -6,13 +6,13 @@ import Link from "next/link";
 
 const allIntegracionesSubsections = {
   vigia: [
-    { label: "Protector Automático de Motor", path: "protector-de-motor" },
     {
       label: "Calibrador Electrónico de Neumáticos",
       path: "calibrador-de-neumaticos",
     },
+    { label: "Protector Automático de Motor", path: "protector-de-motor" },
   ],
-  vitran: [{ label: "Eco Drive", path: "eco-drive" }],
+  vitran: [{ label: "Monitor de presión", path: "monitor-de-presion" }],
 };
 
 const IntegracionesSectionLayout = ({ children, params }) => {

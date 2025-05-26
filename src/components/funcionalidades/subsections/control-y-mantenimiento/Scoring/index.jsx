@@ -128,7 +128,7 @@ const Scoring = () => {
               height={32}
               alt=""
             />
-            <span>Nivel 1: Infracciones de exceso de velocidad</span>
+            <span>Nivel 1: Infracciones de exceso de velocidad.</span>
           </div>
           <div className={styles.item}>
             <Image
@@ -141,7 +141,7 @@ const Scoring = () => {
             />
             <span>
               Nivel 2: Infracciones de aceleración, frenadas, aceleración en
-              cruvas y desconexión del sistema
+              cruvas y desconexión del sistema.
             </span>
           </div>
           <div className={styles.item}>
@@ -155,7 +155,7 @@ const Scoring = () => {
             />
             <span>
               Nivel 3: Infracciones de ralentí, manejo nocturno, manejo continuo
-              y descanso incompleto
+              y descanso incompleto.
             </span>
           </div>
         </div>

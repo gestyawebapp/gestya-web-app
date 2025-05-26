@@ -76,13 +76,9 @@
 .container {
   background-color: var(--gray-100);
   border-radius: 0.5rem;
-  max-width: none;
+  max-width: 1025px;
   padding: 3em;
   width: 100%;
-}
-
-.container:first-of-type {
-  margin-bottom: 2rem;
 }
 
 .container .subtitle {
@@ -123,9 +119,5 @@
 
   .controlImageWrapper {
     margin-bottom: 0;
-  }
-
-  .container {
-    padding: 3em 2em;
   }
 }

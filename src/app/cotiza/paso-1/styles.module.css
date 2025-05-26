@@ -8,6 +8,7 @@
 
 .box {
   align-items: center;
+  border-radius: 0.5rem;
   color: var(--gray-900);
   cursor: pointer;
   display: flex;

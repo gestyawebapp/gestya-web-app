@@ -3,7 +3,7 @@ import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
-const EcoDrive = () => {
+const MonitorDePresion = () => {
   const common = {
     alt: "",
     sizes: "",
@@ -133,4 +133,4 @@ const EcoDrive = () => {
   );
 };
 
-export default EcoDrive;
+export default MonitorDePresion;

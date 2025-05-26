@@ -1,12 +1,12 @@
 import CalibradorDeNeumaticos from "@/components/integraciones/subsections/vigia/CalibradorDeNeumaticos";
 import ProtectorDeMotor from "@/components/integraciones/subsections/vigia/ProtectorDeMotor";
-import EcoDrive from "@/components/integraciones/subsections/vitran/EcoDrive";
+import MonitorDePresion from "@/components/integraciones/subsections/vitran/MonitorDePresion";
 import { notFound } from "next/navigation";
 
 const componentMap = {
   "vigia/protector-de-motor": ProtectorDeMotor,
   "vigia/calibrador-de-neumaticos": CalibradorDeNeumaticos,
-  "vitran/eco-drive": EcoDrive,
+  "vitran/monitor-de-presion": MonitorDePresion,
 };
 
 const IntegracionesSubsectionPage = ({ params }) => {
