@@ -1,7 +1,9 @@
 import ContactSection from "@/components/contacto/ContactSection";
+import { UTMGrabber } from "@/components/cotiza/UTMGrabber";
 import HeroSection from "@/components/contacto/HeroSection";
 import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
+import { Suspense } from "react";
 import Link from "next/link";
 
 const ContactoPage = () => {
@@ -30,6 +32,9 @@ const ContactoPage = () => {
 
   return (
     <>
+      <Suspense fallback={null}>
+        <UTMGrabber />
+      </Suspense>
       <HeroSection />
       <ContactSection />
       <div className={styles.container}>

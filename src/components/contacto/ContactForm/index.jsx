@@ -4,27 +4,12 @@ import { toastError, toastSuccess } from "@/utils/alerts";
 import { Argentina } from "@/components/icons/Argentina";
 import { ContactFormSchema } from "@/utils/definitions";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./styles.module.css";
 
 const ContactForm = () => {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const [utmParams, setUtmParams] = useState({});
-
-  useEffect(() => {
-    const utms = {
-      Origen_de_la_Campa_a: searchParams.get("utm_source") || "",
-      Medio_de_la_Campa_a: searchParams.get("utm_medium") || "",
-      Nombre_de_la_Campa_a: searchParams.get("utm_campaign") || "",
-      T_rmino_de_la_Campa_a: searchParams.get("utm_term") || "",
-      utm_content: searchParams.get("utm_content") || "",
-    };
-    setUtmParams(utms);
-  }, [searchParams]);
 
   const {
     formState: { errors },
@@ -41,6 +26,9 @@ const ContactForm = () => {
     const currentUrl =
       typeof window !== "undefined" ? window.location.href : ""; // Obtengo la URL para el payload
 
+    // Recupero utms de localStorage
+    const storedUtms = JSON.parse(localStorage.getItem("utms") || "{}");
+
     const fullPayload = {
       First_Name: data.nombre,
       Last_Name: data.apellido,
@@ -48,15 +36,15 @@ const ContactForm = () => {
       Mobile: `+54${data.telefono}`,
       Persona_Provincia: data.provincia,
       Mensaje: data.mensaje,
-      Layout: "5851273000000517156",
-      Lead_Status: "No contactado",
-      Lead_Source: "Formulario Web",
+      Country: "Argentina", // Por defecto para Zoho CRM
+      Layout: "5851273000000517156", // Por defecto para Zoho CRM
+      Lead_Status: "No contactado", // Por defecto para Zoho CRM
+      Lead_Source: "Formulario Web", // Por defecto para Zoho CRM
       URL_de_la_Campa_a: currentUrl,
-      ...utmParams,
+      ...storedUtms,
     };
 
     try {
-      /* handleSubmit ya valida el form (según schema definido en Zod) por lo que no es necesario utilizar trigger() para validar manualmente */
       /* Si la validación fue exitosa, hago el POST */
       const res = await fetch("/api/zoho/create-lead", {
         method: "POST",
@@ -72,7 +60,8 @@ const ContactForm = () => {
         toastError(
           3000,
           "Error al enviar",
-          result.error || "Intente nuevamente más tarde"
+          result.error ||
+            "Hubo un problema al enviar el formulario, intente más tarde"
         );
         router.push("/");
         return;
