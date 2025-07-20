@@ -1,6 +1,8 @@
+import { Whatsapp } from "@/components/icons/Whatsapp";
 import ContactForm from "../ContactForm";
 import styles from "./styles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContactSection = () => {
   return (
@@ -21,6 +23,13 @@ const ContactSection = () => {
               Estamos para responder tus preguntas sobre nuestro servicio,
               funcionalidades, integraciones, soporte y más.
             </p>
+            <Link href="#" className={styles.whatsapp}>
+              <div>
+                <Whatsapp size={24} /> <span>Whatsapp 24 horas</span>
+              </div>
+              <p>Uso exclusivo mensajes</p>
+              <span>3482 21-2018</span>
+            </Link>
           </div>
         </div>
         <div className={styles.container}>
@@ -37,7 +46,7 @@ const ContactSection = () => {
               Centro de atención GESTYA Disponible 24 hs
             </h3>
             <p className={styles.text}>
-              <span>0800-333-GESTYA (4378)</span>
+              <span className={styles.underline}>0800-333-GESTYA (4378)</span>
             </p>
           </div>
         </div>
@@ -57,7 +66,8 @@ const ContactSection = () => {
               <li>Guadalupe Norte Santa Fe - Argentina</li>
               <li>Tel: +54 03482 498 800</li>
               <li>
-                E-mail: <span>colven@colven.com.ar</span>
+                E-mail:{" "}
+                <span className={styles.underline}>colven@colven.com.ar</span>
               </li>
             </ul>
             <h3 className={styles.title}>
@@ -68,7 +78,8 @@ const ContactSection = () => {
               <li>Buenos Aires - Argentina</li>
               <li>Tel: +54 011 4106 0600</li>
               <li>
-                E-mail: <span>colvenba@colven.com.ar</span>
+                E-mail:{" "}
+                <span className={styles.underline}>colvenba@colven.com.ar</span>
               </li>
             </ul>
           </div>

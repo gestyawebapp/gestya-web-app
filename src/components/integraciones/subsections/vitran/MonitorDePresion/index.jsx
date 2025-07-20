@@ -41,7 +41,7 @@ const MonitorDePresion = () => {
             <span>Monitor</span> de Presión de Neumáticos
           </h2>
           <h3 className={styles.subtitle}>
-            Eventos de baja presión de aceite o alta temperatura
+            Eventos de Alta/Baja Presión y de Alta Temperatura
           </h3>
           <p className={styles.text}>
             VITRAN Monitor de Presión de Neumáticos{" "}

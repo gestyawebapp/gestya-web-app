@@ -12,7 +12,7 @@ const allIntegracionesSubsections = {
     },
     { label: "Protector Automático de Motor", path: "protector-de-motor" },
   ],
-  vitran: [{ label: "Monitor de presión", path: "monitor-de-presion" }],
+  vitran: [{ label: "Monitor de Presión", path: "monitor-de-presion" }],
 };
 
 const IntegracionesSectionLayout = ({ children, params }) => {

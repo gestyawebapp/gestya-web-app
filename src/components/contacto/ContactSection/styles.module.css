@@ -20,8 +20,9 @@
   width: 100%;
 }
 
-.container span {
+.container .underline {
   text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .logoWrapper img {
@@ -37,6 +38,22 @@
 
 .text {
   line-height: 128%;
+}
+
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.whatsapp svg {
+  fill: #25d366;
+}
+
+.whatsapp:hover span:last-of-type {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .list {

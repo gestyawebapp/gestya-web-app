@@ -21,8 +21,8 @@ const ConstructionSection = () => {
             GESTYA es una herramienta indispensable para empresas especializadas
             en construcción,{" "}
             <span>
-              permite controlar las operaciones, evitar sobrecargas de la
-              maquinaria pesada y optimizar el mantenimiento.
+              permite controlar las operaciones, detectar estados
+              Productivos/Improductivos y optimizar el mantenimiento.
             </span>
           </p>
           <p>Evitá tiempos de inactividad no planificados.</p>

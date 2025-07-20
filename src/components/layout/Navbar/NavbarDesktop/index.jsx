@@ -96,14 +96,14 @@ const NavbarDesktop = () => {
               <ul className={`${styles.column} ${styles.functionalities}`}>
                 <li>
                   <Link href="/funcionalidades/ahorro-de-combustible/eco-drive">
-                    <h4>Ahorro de combustible</h4>
+                    <h4>Ahorro de Combustible</h4>
                     <span>Eco Drive</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/funcionalidades/ahorro-de-combustible/cargas-de-combustible">
-                    <h4>Ahorro de combustible</h4>
-                    <span>Cargas de combustible</span>
+                    <h4>Ahorro de Combustible</h4>
+                    <span>Cargas de Combustible</span>
                   </Link>
                 </li>
               </ul>
@@ -166,7 +166,7 @@ const NavbarDesktop = () => {
                 <li>
                   <Link href="/integraciones/vitran/monitor-de-presion">
                     <h4>VITRAN</h4>
-                    <span>Monitor de presión</span>
+                    <span>Monitor de Presión</span>
                   </Link>
                 </li>
               </ul>

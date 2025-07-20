@@ -17,6 +17,17 @@ const QualitySection = () => {
           Cada producto refleja un nivel de calidad que trasciende las
           certificaciones como ISO 9001 o normas europeas (CEE y CE).
         </p>
+        <div className={styles.list}>
+          <ul>
+            <li>CESVI</li>
+          </ul>
+          <Image
+            src={"/images/colven/stars.png"}
+            width={118}
+            height={22}
+            alt="5 estrellas"
+          />
+        </div>
       </div>
       <div className={styles.imageWrapper}>
         <Image

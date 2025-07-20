@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.container a {
+  padding: 0.5em 1.25em;
+}
+
 @media (min-width: 1200px) {
   .container {
     display: flex;

@@ -168,7 +168,7 @@ const NavbarMobile = () => {
                       setIsIntegrationsMenuOpen(false);
                     }}
                   >
-                    <h4>Ahorro de combustible</h4>
+                    <h4>Ahorro de Combustible</h4>
                     <ArrowRight size={20} />
                     <span>Eco Drive</span>
                   </Link>
@@ -182,9 +182,9 @@ const NavbarMobile = () => {
                       setIsIntegrationsMenuOpen(false);
                     }}
                   >
-                    <h4>Ahorro de combustible</h4>
+                    <h4>Ahorro de Combustible</h4>
                     <ArrowRight size={20} />
-                    <span>Cargas de combustible</span>
+                    <span>Cargas de Combustible</span>
                   </Link>
                 </li>
               </ul>
@@ -296,7 +296,7 @@ const NavbarMobile = () => {
                   <Link href="/integraciones/vitran/monitor-de-presion">
                     <h4>VITRAN</h4>
                     <ArrowRight size={20} />
-                    <span>Monitor de presión</span>
+                    <span>Monitor de Presión</span>
                   </Link>
                 </li>
               </ul>

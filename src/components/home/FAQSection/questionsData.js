@@ -2,7 +2,7 @@ export const usabilityQuestions = [
   {
     title: "¿En qué tipos de vehículos puedo instalar GESTYA?",
     description:
-      "En todo tipo de vehículos comerciales, de transporte, logística y agrícolas.",
+      "En todo tipo de vehículos comerciales, de transporte, logística y agrícolas, estacionarios, generadores y cámaras de frío para controlar cortes de luz y temperatura.",
   },
   {
     title: "¿Qué tamaño tiene que ser mi flota para instalar GESTYA?",
@@ -51,7 +51,8 @@ export const applicationQuestions = [
   {
     title:
       "¿Cuenta con integración con sensores de combustible, temperatura u otros?",
-    description: "Sí, el sistema toma la información de la ECU de la unidad.",
+    description:
+      "Sí, el sistema toma la información de la ECU de la unidad y también de otros sensores adicionales.",
   },
   {
     title:

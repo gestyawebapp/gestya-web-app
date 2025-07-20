@@ -25,6 +25,27 @@
   margin-bottom: 1rem;
 }
 
+.footerHero .whatsapp {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-xs);
+  gap: 0.25rem;
+}
+
+.whatsapp svg {
+  fill: #fff;
+  margin-bottom: 1rem;
+}
+
+.whatsapp:hover span:last-of-type {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.whatsapp:hover svg {
+  fill: #25d366;
+}
+
 .footerHero .text {
   color: var(--orange-900);
   font-weight: var(--font-weight-medium);
@@ -93,7 +114,7 @@
     max-width: 350px;
   }
 
-  .footerHero .title {
+  .footerHero .whatsapp {
     margin-bottom: auto;
   }
 

@@ -61,11 +61,8 @@ const Wifi = () => {
       </section>
       <section className={styles.section}>
         <div className={styles.container}>
-          <h3 className={styles.subtitle}>Scoring para conductores</h3>
-          <p className={styles.text}>
-            GESTYA Scoring procesa y clasifica información acerca de la conducta
-            de manejo y devuelve un punteja de cada uno de los conductores.
-          </p>
+          <h3 className={styles.subtitle}>GESTYA</h3>
+          <p className={styles.text}>GESTYA Wifi garantiza los reportes</p>
           <div className={styles.item}>
             <Image
               src={
@@ -76,9 +73,7 @@ const Wifi = () => {
               alt=""
             />
             <div className={styles.block}>
-              <span>
-                Identificá patrones de comportamiento en la conducción.
-              </span>
+              <span>Con el vehículo detenido:</span>
               <ul>
                 <li>
                   Recibí reportes cada 2 minutos. El equipo sigue enviando datos
@@ -145,15 +140,12 @@ const Wifi = () => {
               alt=""
             />
             <div className={styles.block}>
-              <span>Cada dato cuenta:</span>
-              <ul>
-                <li>
-                  Asegurá las operaciones en zonas de baja señal, como zonas
-                  agrícolas, mineras y petroleras. Gestioná los vehículos o
-                  máquinas con la flexibilidad que necesitás para un control
-                  eficiente.
-                </li>
-              </ul>
+              <span>
+                Asegurá las operaciones en zonas de baja señal, como zonas
+                agrícolas, mineras y petroleras. Gestioná los vehículos o
+                máquinas con la flexibilidad que necesitás para un control
+                eficiente.
+              </span>
             </div>
           </div>
         </div>

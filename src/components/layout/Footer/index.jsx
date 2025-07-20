@@ -1,6 +1,7 @@
 import { Facebook } from "@/components/icons/Facebook";
 import { Instagram } from "@/components/icons/Instagram";
 import { LinkedIn } from "@/components/icons/LinkedIn";
+import { Whatsapp } from "@/components/icons/Whatsapp";
 import { Youtube } from "@/components/icons/Youtube";
 import styles from "./styles.module.css";
 import Link from "next/link";
@@ -11,6 +12,12 @@ const Footer = () => {
       <div className={styles.wrapper}>
         <div className={styles.footerHero}>
           <p className={styles.title}>Mantengámonos en contacto</p>
+          <Link href="#" className={styles.whatsapp}>
+            <Whatsapp size={40} />
+            <p>Whatsapp 24 horas</p>
+            <span>Uso exclusivo mensajes</span>
+            <span>3482 21-2018</span>
+          </Link>
           <p className={styles.text}>Seguinos en nuestras Redes Sociales</p>
           <div className={styles.iconsWrapper}>
             <Link

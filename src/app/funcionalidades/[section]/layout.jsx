@@ -13,7 +13,7 @@ const allFuncionalidadesSubsections = {
   ],
   "ahorro-de-combustible": [
     { label: "Eco Drive", path: "eco-drive" },
-    { label: "Cargas de combustible", path: "cargas-de-combustible" },
+    { label: "Cargas de Combustible", path: "cargas-de-combustible" },
   ],
   "control-y-mantenimiento": [
     { label: "Horas de Marcha", path: "horas-de-marcha" },

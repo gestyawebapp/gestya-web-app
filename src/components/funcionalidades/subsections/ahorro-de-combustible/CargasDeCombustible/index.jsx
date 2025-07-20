@@ -16,7 +16,7 @@ const CargasDeCombustible = () => {
             alt=""
           />
           <h2 className={styles.title}>
-            <span>GESTYA</span> Cargas de combustible
+            <span>GESTYA</span> Cargas de Combustible
           </h2>
           <h3 className={styles.subtitle}>
             Visualización de datos sobre cargas
