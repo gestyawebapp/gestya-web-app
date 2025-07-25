@@ -40,4 +40,5 @@ export const CotizaFormSchema = UserSchema.extend({
     .trim()
     .min(1, { message: "Debe ingresar una localidad" })
     .max(100, { message: "La localidad es demasiado larga" }),
+  mensaje: z.string().trim().max(1000, { message: "Mensaje demasiado largo" }),
 });

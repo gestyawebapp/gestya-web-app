@@ -53,6 +53,8 @@ const Paso4 = () => {
     // Recupero utms de localStorage
     const storedUtms = JSON.parse(localStorage.getItem("utms") || "{}");
 
+    console.log(data);
+
     const fullPayload = {
       First_Name: data.nombre,
       Last_Name: data.apellido,
@@ -60,6 +62,7 @@ const Paso4 = () => {
       Mobile: `+54${data.telefono}`,
       Persona_Provincia: data.provincia,
       Localidad: data.localidad,
+      Mensaje: data.mensaje,
       Country: "Argentina", // Por defecto para Zoho CRM
       Layout: "5851273000000517156", // Por defecto para Zoho CRM
       Lead_Status: "No contactado", // Por defecto para Zoho CRM
@@ -71,40 +74,42 @@ const Paso4 = () => {
       ...storedUtms,
     };
 
-    try {
-      /* Si la validación fue exitosa, hago el POST */
-      const res = await fetch("/api/zoho/create-lead", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(fullPayload),
-      });
+    console.log(fullPayload);
 
-      const result = await res.json();
+    // try {
+    //   /* Si la validación fue exitosa, hago el POST */
+    //   const res = await fetch("/api/zoho/create-lead", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(fullPayload),
+    //   });
 
-      if (!res.ok) {
-        toastError(
-          3000,
-          "Error al enviar",
-          result.error ||
-            "Hubo un problema al enviar el formulario, intente más tarde"
-        );
-        router.push("/cotiza");
-        return;
-      }
+    //   const result = await res.json();
 
-      localStorage.removeItem("utms"); // Limpio localStorage
+    //   if (!res.ok) {
+    //     toastError(
+    //       3000,
+    //       "Error al enviar",
+    //       result.error ||
+    //         "Hubo un problema al enviar el formulario, intente más tarde"
+    //     );
+    //     router.push("/cotiza");
+    //     return;
+    //   }
 
-      toastSuccess(
-        3000,
-        "Formulario completo",
-        "La información ha sido enviada con éxito"
-      );
-      router.push("/cotiza/gracias");
-    } catch (err) {
-      toastError(3000, "Error inesperado", err.message);
-    }
+    //   localStorage.removeItem("utms"); // Limpio localStorage
+
+    //   toastSuccess(
+    //     3000,
+    //     "Formulario completo",
+    //     "La información ha sido enviada con éxito"
+    //   );
+    //   router.push("/cotiza/gracias");
+    // } catch (err) {
+    //   toastError(3000, "Error inesperado", err.message);
+    // }
   };
 
   return (
@@ -192,6 +197,10 @@ const Paso4 = () => {
         <div className={styles.formCustomError}>
           {errors?.localidad?.message}
         </div>
+        <div className={styles.formRow}>
+          <textarea {...register("mensaje")} placeholder="Mensaje*" />
+        </div>
+        <div className={styles.formCustomError}>{errors?.mensaje?.message}</div>
       </form>
     </motion.div>
   );

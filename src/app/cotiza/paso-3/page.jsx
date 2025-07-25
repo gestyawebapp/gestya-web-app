@@ -10,6 +10,7 @@ import { Aceite } from "@/components/icons/Aceite";
 import { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import { motion } from "framer-motion";
+import { Otro } from "@/components/icons/Otro";
 
 const variants = {
   initial: { opacity: 0, x: 50 },
@@ -41,6 +42,7 @@ const Paso3 = () => {
     { label: "Minimizar el tiempo de entregas", Icon: Entregas },
     { label: "Reducir el gasto en mantenimiento", Icon: Mantenimiento },
     { label: "Aumentar la seguridad de choferes", Icon: Choferes },
+    { label: "Otra", Icon: Otro },
   ];
 
   return (

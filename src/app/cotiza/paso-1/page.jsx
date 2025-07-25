@@ -5,6 +5,9 @@ import { Utilitario } from "@/components/icons/Utilitario";
 import { Colectivo } from "@/components/icons/Colectivo";
 import { useCotiza } from "@/context/CotizaContext";
 import { Camion } from "@/components/icons/Camion";
+import { Barco } from "@/components/icons/Barco";
+import { Motor } from "@/components/icons/Motor";
+import { Otro } from "@/components/icons/Otro";
 import { Auto } from "@/components/icons/Auto";
 import { Moto } from "@/components/icons/Moto";
 import { Agro } from "@/components/icons/Agro";
@@ -43,6 +46,9 @@ const Paso1 = () => {
     { label: "Motos", Icon: Moto },
     { label: "Utilitarios", Icon: Utilitario },
     { label: "Máquinas Agrícolas", Icon: Agro },
+    { label: "Barcos", Icon: Barco },
+    { label: "Motores Estacionarios", Icon: Motor },
+    { label: "Otros", Icon: Otro },
   ];
 
   return (

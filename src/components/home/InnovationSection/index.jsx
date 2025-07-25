@@ -12,8 +12,8 @@ const InnovationSection = () => {
     props: { srcSet: desktop },
   } = getImageProps({
     ...common,
-    width: 1357,
-    height: 955,
+    width: 2807,
+    height: 1971,
     quality: 80,
     src: "/images/home/innovacion-xl.png",
   });
@@ -21,8 +21,8 @@ const InnovationSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 378,
-    height: 495,
+    width: 813,
+    height: 1148,
     quality: 80,
     src: "/images/home/innovacion-sm.png",
   });

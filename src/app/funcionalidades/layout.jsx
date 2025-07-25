@@ -19,7 +19,7 @@ const FuncionalidadesLayout = ({ children }) => {
         <Link
           href="/funcionalidades/seguimiento-de-vehiculos"
           className={`${styles.linkSeguimientoDeVehiculos} ${
-            pathname.startsWith(`/funcionalidades/seguimiento-de-vehiculos`)
+            pathname.startsWith("/funcionalidades/seguimiento-de-vehiculos")
               ? styles.active
               : ""
           }`}
@@ -30,7 +30,7 @@ const FuncionalidadesLayout = ({ children }) => {
         <Link
           href="/funcionalidades/ahorro-de-combustible"
           className={`${styles.linkAhorroDeCombustible} ${
-            pathname.startsWith(`/funcionalidades/ahorro-de-combustible`)
+            pathname.startsWith("/funcionalidades/ahorro-de-combustible")
               ? styles.active
               : ""
           }`}
@@ -41,7 +41,7 @@ const FuncionalidadesLayout = ({ children }) => {
         <Link
           href="/funcionalidades/control-y-mantenimiento"
           className={`${styles.linkControlYMantenimiento} ${
-            pathname.startsWith(`/funcionalidades/control-y-mantenimiento`)
+            pathname.startsWith("/funcionalidades/control-y-mantenimiento")
               ? styles.active
               : ""
           }`}
