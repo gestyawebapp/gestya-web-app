@@ -35,7 +35,7 @@ const ContactForm = () => {
       Email: data.email,
       Mobile: `+54${data.telefono}`,
       Persona_Provincia: data.provincia,
-      Mensaje: data.mensaje,
+      Mensaje_de_cliente: data.mensaje,
       Country: "Argentina", // Por defecto para Zoho CRM
       Layout: "5851273000000517156", // Por defecto para Zoho CRM
       Lead_Status: "No contactado", // Por defecto para Zoho CRM
