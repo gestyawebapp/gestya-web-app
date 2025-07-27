@@ -74,42 +74,40 @@ const Paso4 = () => {
       ...storedUtms,
     };
 
-    console.log(fullPayload);
+    try {
+      /* Si la validación fue exitosa, hago el POST */
+      const res = await fetch("/api/zoho/create-lead", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(fullPayload),
+      });
 
-    // try {
-    //   /* Si la validación fue exitosa, hago el POST */
-    //   const res = await fetch("/api/zoho/create-lead", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(fullPayload),
-    //   });
+      const result = await res.json();
 
-    //   const result = await res.json();
+      if (!res.ok) {
+        toastError(
+          3000,
+          "Error al enviar",
+          result.error ||
+            "Hubo un problema al enviar el formulario, intente más tarde"
+        );
+        router.push("/cotiza");
+        return;
+      }
 
-    //   if (!res.ok) {
-    //     toastError(
-    //       3000,
-    //       "Error al enviar",
-    //       result.error ||
-    //         "Hubo un problema al enviar el formulario, intente más tarde"
-    //     );
-    //     router.push("/cotiza");
-    //     return;
-    //   }
+      localStorage.removeItem("utms"); // Limpio localStorage
 
-    //   localStorage.removeItem("utms"); // Limpio localStorage
-
-    //   toastSuccess(
-    //     3000,
-    //     "Formulario completo",
-    //     "La información ha sido enviada con éxito"
-    //   );
-    //   router.push("/cotiza/gracias");
-    // } catch (err) {
-    //   toastError(3000, "Error inesperado", err.message);
-    // }
+      toastSuccess(
+        3000,
+        "Formulario completo",
+        "La información ha sido enviada con éxito"
+      );
+      router.push("/cotiza/gracias");
+    } catch (err) {
+      toastError(3000, "Error inesperado", err.message);
+    }
   };
 
   return (

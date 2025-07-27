@@ -2,6 +2,10 @@
   padding: calc(var(--header-mobile-height) + 5rem) 0.75rem 5rem 0.75rem;
 }
 
+.contentWrapper {
+  min-height: 500px; /* Agrego min-height para que no se desplacen los botones del layout al montarse el componente */
+}
+
 .title,
 .subtitle,
 .message {

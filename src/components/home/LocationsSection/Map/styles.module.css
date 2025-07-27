@@ -1,0 +1,36 @@
+.tooltip {
+  font-size: var(--font-size-xs);
+  padding: 1em;
+}
+
+.tooltip .title {
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.tooltip .title::after {
+  background-image: url("/point-gestya-small.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  margin-left: 0.5rem;
+  width: 20px;
+}
+
+.tooltip .text {
+  margin-bottom: 0.25rem;
+}
+
+.tooltip .text:last-of-type {
+  margin: 0;
+}
+
+.tooltip .text span {
+  color: var(--blue-900);
+  font-weight: 700;
+}

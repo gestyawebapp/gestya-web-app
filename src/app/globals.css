@@ -164,3 +164,26 @@ ul {
 .button-functionality.green.active {
   background-color: var(--green-900);
 }
+
+/* not-found.js */
+
+.not-found-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.not-found-description {
+  color: var(--gray-900);
+  margin-bottom: 1.5rem;
+}

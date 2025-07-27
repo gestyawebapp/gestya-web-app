@@ -26,6 +26,10 @@
   position: relative;
 }
 
+.navLink:active {
+  color: var(--blue-900);
+}
+
 .navbar .small {
   padding: 0.5em 0.75em;
 }
@@ -61,6 +65,10 @@
 .column a {
   display: block;
   padding-block: 0;
+}
+
+.column a:active {
+  color: var(--blue-900);
 }
 
 .column a span {
