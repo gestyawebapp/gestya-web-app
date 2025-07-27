@@ -1,3 +1,5 @@
+"use client";
+
 import PricingSection from "@/components/home/PricingSection";
 import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
