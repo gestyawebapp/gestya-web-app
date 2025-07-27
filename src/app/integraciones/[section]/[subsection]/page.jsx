@@ -1,5 +1,8 @@
+"use client";
+
 import OvalSpinner from "@/components/layout/OvalSpinner";
 import { notFound } from "next/navigation";
+import dynamic from "next/dynamic";
 
 /* Utilizo dynamic imports de Next Js para importar los componentes solo cuando sean requeridos por el usuario (y no todos desde un principio) */
 
