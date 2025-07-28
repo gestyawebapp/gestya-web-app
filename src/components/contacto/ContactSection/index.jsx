@@ -28,7 +28,7 @@ const ContactSection = () => {
                 <Whatsapp size={24} /> <span>Whatsapp 24 horas</span>
               </div>
               <p>Uso exclusivo mensajes</p>
-              <span>3482 21-2018</span>
+              <span className={styles.underline}>3482 21-2018</span>
             </Link>
           </div>
         </div>

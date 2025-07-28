@@ -55,7 +55,7 @@ const NavbarMobile = () => {
         className={styles.menuButton}
         onClick={() => setIsNavbarOpen((prev) => !prev)}
         aria-expanded={isNavbarOpen}
-        aria-controls="navbarMobile" // Debe ser el id de la navbar mobile (accesibilidad)
+        aria-controls="navbarMobile"
       >
         {isNavbarOpen ? <Close size={20} filled /> : <Hamburger size={20} />}
       </button>
@@ -360,13 +360,24 @@ const NavbarMobile = () => {
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.small}`}>
-            <Link href={"/cotiza"} className={`button-primary`}>
+            <Link
+              href={"/cotiza"}
+              className={`button-primary`}
+              onClick={() => {
+                setIsNavbarOpen(false);
+                setIsFunctionalitiesMenuOpen(false);
+                setIsIntegrationsMenuOpen(false);
+              }}
+            >
               Cotizá ahora
             </Link>
           </li>
           <li className={styles.navItem}>
             <span>Solicitá asesoramiento 0800-333-GESTYA (4378)</span>
-            <Link href={"/"} className="button-info">
+            <Link
+              href={"https://ar.gestya.com/StreetZ/"}
+              className="button-info"
+            >
               Iniciar Sesión en plataforma
             </Link>
           </li>
