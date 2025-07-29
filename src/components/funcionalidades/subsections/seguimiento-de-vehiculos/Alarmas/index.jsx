@@ -1,34 +1,10 @@
 "use client";
 
 import PricingSection from "@/components/home/PricingSection";
-import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
 const Alarmas = () => {
-  const common = {
-    alt: "",
-    sizes: "",
-  };
-  const {
-    props: { srcSet: heroDesktop },
-  } = getImageProps({
-    ...common,
-    width: 1471,
-    height: 1374,
-    quality: 80,
-    src: "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/hero-xl.png",
-  });
-  const {
-    props: { srcSet: heroMobile, ...heroRest },
-  } = getImageProps({
-    ...common,
-    width: 750,
-    height: 1038,
-    quality: 80,
-    src: "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/hero-sm.png",
-  });
-
   return (
     <>
       <section className={styles.section}>
@@ -50,11 +26,16 @@ const Alarmas = () => {
             generadas del sistema y facilitar su gestión.
           </p>
         </div>
-        <picture className={styles.heroImageWrapper}>
-          <source media="(max-width: 991px)" srcSet={heroMobile} />
-          <source media="(min-width: 992px)" srcSet={heroDesktop} />
-          <img {...heroRest} alt={heroRest.alt} />
-        </picture>
+        <div className={styles.heroImageWrapper}>
+          <Image
+            src={
+              "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/hero-xl.png"
+            }
+            width={1471}
+            height={1374}
+            alt=""
+          />
+        </div>
       </section>
       <section className={styles.section}>
         <div className={styles.controlImageWrapper}>

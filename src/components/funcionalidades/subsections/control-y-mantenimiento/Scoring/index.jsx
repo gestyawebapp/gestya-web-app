@@ -1,34 +1,10 @@
 "use client";
 
 import PricingSection from "@/components/home/PricingSection";
-import { getImageProps } from "next/image";
 import styles from "./styles.module.css";
 import Image from "next/image";
 
 const Scoring = () => {
-  const common = {
-    alt: "",
-    sizes: "",
-  };
-  const {
-    props: { srcSet: heroDesktop },
-  } = getImageProps({
-    ...common,
-    width: 1471,
-    height: 1327,
-    quality: 80,
-    src: "/images/funcionalidades/control-y-mantenimiento/scoring/hero-xl.png",
-  });
-  const {
-    props: { srcSet: heroMobile, ...heroRest },
-  } = getImageProps({
-    ...common,
-    width: 750,
-    height: 953,
-    quality: 80,
-    src: "/images/funcionalidades/control-y-mantenimiento/scoring/hero-sm.png",
-  });
-
   return (
     <>
       <section className={styles.section}>
@@ -50,11 +26,16 @@ const Scoring = () => {
             para tomar decisiones en base a datos y prevenir riesgos.
           </p>
         </div>
-        <picture className={styles.heroImageWrapper}>
-          <source media="(max-width: 991px)" srcSet={heroMobile} />
-          <source media="(min-width: 992px)" srcSet={heroDesktop} />
-          <img {...heroRest} alt={heroRest.alt} />
-        </picture>
+        <div className={styles.heroImageWrapper}>
+          <Image
+            src={
+              "/images/funcionalidades/control-y-mantenimiento/scoring/hero-xl.png"
+            }
+            width={1471}
+            height={1327}
+            alt=""
+          />
+        </div>
       </section>
       <section className={styles.section}>
         <div className={styles.controlImageWrapper}>
