@@ -79,6 +79,11 @@
   width: 100%;
 }
 
+.card img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
 .card h4 {
   color: var(--blue-900);
   font-size: var(--font-size-md);

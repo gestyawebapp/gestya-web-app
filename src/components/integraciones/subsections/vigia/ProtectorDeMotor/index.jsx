@@ -75,11 +75,12 @@ const ProtectorDeMotor = () => {
           </h2>
           <h3 className={styles.subtitle}>Integración completa con GESTYA</h3>
           <p className={styles.text}>
-            Diseñado especialmente para vehículos pesados y de uso intensivo,
-            ayuda a prevenir fallas mecánicas graves, prolonga la vida útil del
-            motor y reduce los costos de mantenimiento y reparación. Su
-            confiable tecnología es una aliada clave para el trabajo seguro en
-            ruta.
+            Diseñado para vehículos de todo tipo, VIGIA Protector Automático de
+            Motor ayuda a prevenir fallas mecánicas graves durante el uso
+            intensivo, prolonga la vida útil del motor y reduce los costos de
+            mantenimiento y reparación. Su tecnología confiable es una aliada
+            clave para operar con seguridad, tanto en ruta como en entornos
+            exigentes, como el agrícola o el minero.
           </p>
         </div>
       </section>

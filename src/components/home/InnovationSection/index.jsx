@@ -12,8 +12,8 @@ const InnovationSection = () => {
     props: { srcSet: desktop },
   } = getImageProps({
     ...common,
-    width: 2807,
-    height: 1971,
+    width: 5613,
+    height: 3942,
     quality: 80,
     src: "/images/home/innovacion-xl.png",
   });
@@ -21,8 +21,8 @@ const InnovationSection = () => {
     props: { srcSet: mobile, ...rest },
   } = getImageProps({
     ...common,
-    width: 813,
-    height: 1148,
+    width: 1625,
+    height: 2295,
     quality: 80,
     src: "/images/home/innovacion-sm.png",
   });
@@ -48,38 +48,38 @@ const InnovationSection = () => {
       <div className={styles.logos}>
         <Image
           src={"/images/home/logo-gestya.png"}
-          width={158}
-          height={73}
+          width={167}
+          height={79}
           alt="Logo GESTYA"
         />
         <Image
           src={"/images/home/logo-vigia.png"}
-          width={158}
-          height={73}
+          width={167}
+          height={79}
           alt="Logo VIGIA"
         />
         <Image
           src={"/images/home/logo-viesa.png"}
-          width={158}
-          height={73}
+          width={167}
+          height={79}
           alt="Logo VIESA"
         />
         <Image
           src={"/images/home/logo-coblow.png"}
-          width={158}
-          height={73}
+          width={167}
+          height={79}
           alt="Logo COBLOW"
         />
         <Image
           src={"/images/home/logo-vitran.png"}
-          width={158}
-          height={73}
+          width={199}
+          height={79}
           alt="Logo VITRAN"
         />
         <Image
           src={"/images/home/logo-voryl.png"}
-          width={158}
-          height={73}
+          width={167}
+          height={79}
           alt="Logo VORYL"
         />
       </div>

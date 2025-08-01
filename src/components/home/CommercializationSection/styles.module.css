@@ -1,6 +1,5 @@
 .section {
   background-color: var(--blue-100);
-  padding: calc(var(--vertical-container-padding) / 2) 0.75rem 0 0.75rem;
 }
 
 .wrapper {
@@ -9,6 +8,7 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: var(--max-container-width);
+  padding: calc(var(--vertical-container-padding) / 2) 0.75rem 0 0.75rem;
   width: 100%;
 }
 
@@ -60,7 +60,7 @@
 }
 
 @media (min-width: 768px) {
-  .section {
+  .wrapper {
     padding: calc(var(--vertical-container-padding) / 2) 3.75rem 0 3.75rem;
   }
 
@@ -79,18 +79,15 @@
 }
 
 @media (min-width: 1200px) {
-  .section {
-    padding: 2.75rem 0 0 3.75rem;
-  }
-
   .wrapper {
     flex-direction: row;
     gap: 2rem;
     justify-content: space-between;
+    padding: calc(var(--vertical-container-padding) / 2) 3.75rem 0 3.75rem;
   }
 
   .container {
-    max-width: 575px;
+    max-width: 525px;
     padding-bottom: 2rem;
   }
 
@@ -110,11 +107,5 @@
   .imageWrapper img {
     object-fit: contain;
     width: 100%;
-  }
-}
-
-@media (min-width: 1300px) {
-  .section {
-    padding: calc(var(--vertical-container-padding) / 2) 0 0 3.75rem;
   }
 }

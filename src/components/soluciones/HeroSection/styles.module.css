@@ -10,6 +10,7 @@
 .title {
   font-size: var(--font-size-4xl);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .title span {
@@ -21,6 +22,7 @@
   line-height: 150%;
   margin-bottom: 4rem;
   max-width: 760px;
+  text-align: center;
 }
 
 .imageWrapper {

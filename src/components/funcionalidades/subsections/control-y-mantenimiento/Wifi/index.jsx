@@ -61,8 +61,9 @@ const Wifi = () => {
       </section>
       <section className={styles.section}>
         <div className={styles.container}>
-          <h3 className={styles.subtitle}>GESTYA</h3>
-          <p className={styles.text}>GESTYA Wifi garantiza los reportes</p>
+          <h3 className={styles.subtitle}>
+            GESTYA Wifi garantiza los reportes
+          </h3>
           <div className={styles.item}>
             <Image
               src={

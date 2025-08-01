@@ -35,8 +35,9 @@ const TechnologySection = () => {
           </h2>
           <p>
             Consultá la información de tu flota desde la{" "}
-            <span>aplicación móvil exclusiva.</span> Accedé a datos clave como
-            ubicación, estado de los vehículos, consumo de combustible y más.
+            <span>plataforma exclusiva de GESTYA.</span> Accedé a datos clave
+            como ubicación, estado de los vehículos, consumo de combustible y
+            más.
           </p>
           <Link href="/cotiza" className="button-secondary">
             Quiero instalar GESTYA

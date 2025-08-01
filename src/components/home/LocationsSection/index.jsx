@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Mapa from "./Map";
 import styles from "./styles.module.css";
+import Image from "next/image";
+import Mapa from "./Map";
 
 export default function LocationsSection() {
   const [stores, setStores] = useState([]);
@@ -59,7 +60,24 @@ export default function LocationsSection() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>Buscador - Servicios Oficiales</h2>
+      <div className={styles.header}>
+        <Image
+          src={"/images/home/icono-mapa.png"}
+          width={127}
+          height={126}
+          alt=""
+        />
+        <div>
+          <h2 className={styles.title}>
+            <span>Servicios Oficiales</span> COLVEN
+          </h2>
+          <p className={styles.text}>
+            Filtrá por ubicación y encontrá en el mapa Servicios Oficiales
+            COLVEN cerca de tu zona.{" "}
+            <span>Más de 700 Servicios Oficiales en todo el país</span>.
+          </p>
+        </div>
+      </div>
       <div className={styles.selectContainer}>
         <select
           className={styles.select}

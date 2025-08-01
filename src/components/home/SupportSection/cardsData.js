@@ -4,8 +4,8 @@ export const cards = [
     description:
       "Comunicate 24/7 a la línea directa 0800-333-GESTYA (4378) disponible las 24 horas.",
     img: "/images/home/icono-soporte.png",
-    width: 54,
-    height: 55,
+    width: 80,
+    height: 80,
     alt: "Ícono de soporte",
   },
   {
@@ -13,8 +13,8 @@ export const cards = [
     description:
       "Disponibles los 365 días del año para brindarte soluciones y respuestas rápidas.",
     img: "/images/home/icono-estrella.png",
-    width: 55,
-    height: 55,
+    width: 80,
+    height: 80,
     alt: "Ícono de estrella",
   },
   {
@@ -22,8 +22,8 @@ export const cards = [
     description:
       "Garantizamos un alto estándar de protección de la información en cada contacto.",
     img: "/images/home/icono-seguridad.png",
-    width: 54,
-    height: 55,
+    width: 80,
+    height: 80,
     alt: "Ícono de seguridad",
   },
 ];
