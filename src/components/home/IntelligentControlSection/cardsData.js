@@ -30,7 +30,7 @@ export const cards = [
   {
     title: "Conectividad",
     description:
-      "Gestioná con una aplicación móvil y recibí reportes incluso desde áreas remotas.",
+      "Gestioná con la plataforma exclusiva y recibí reportes incluso desde áreas remotas.",
     img: "/images/home/icono-conectividad.png",
     alt: "Ícono de conectividad",
   },

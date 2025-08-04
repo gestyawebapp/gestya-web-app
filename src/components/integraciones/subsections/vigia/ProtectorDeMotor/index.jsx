@@ -34,8 +34,10 @@ const ProtectorDeMotor = () => {
       <section className={styles.section}>
         <div className={styles.header}>
           <Image
-            src={"/images/home/logo-vigia.png"}
-            width={159}
+            src={
+              "/images/integraciones/vigia/calibrador-de-neumaticos/logo-vigia-alt.png"
+            }
+            width={158}
             height={73}
             alt=""
           />
@@ -63,9 +65,10 @@ const ProtectorDeMotor = () => {
       <section className={styles.section}>
         <div className={styles.controlImageWrapper}>
           <Image
-            src={"/images/integraciones/vigia/protector-de-motor/monitor.png"}
-            width={566}
-            height={546}
+            src={"/images/integraciones/vigia/protector-de-motor/monitor.jpg"}
+            width={1250}
+            height={1250}
+            quality={100}
             alt=""
           />
         </div>

@@ -68,7 +68,6 @@ const Logistica = () => {
             de cada vehículo. Visualizá los viajes e identificá desvíos, tiempos
             de detención y distintos patrones de movimiento para tomar
             decisiones eficientes. Programá alertas para eventos destacados.
-            Beneficios:
           </p>
           <p className={styles.text}>Beneficios:</p>
           <div className={styles.item}>

@@ -64,7 +64,7 @@ export const applicationQuestions = [
 
 export const clientQuestions = [
   {
-    title: "¿El Centro de atención al cliente se subcontrata?",
+    title: "¿El Centro de Atención al cliente se subcontrata?",
     description:
       "No, el soporte es parte del servicio para brindar una atención completa.",
   },

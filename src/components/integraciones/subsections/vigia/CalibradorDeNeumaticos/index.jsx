@@ -34,8 +34,10 @@ const CalibradorDeNeumaticos = () => {
       <section className={styles.section}>
         <div className={styles.header}>
           <Image
-            src={"/images/home/logo-vigia.png"}
-            width={159}
+            src={
+              "/images/integraciones/vigia/calibrador-de-neumaticos/logo-vigia-alt.png"
+            }
+            width={158}
             height={73}
             alt=""
           />
@@ -62,10 +64,11 @@ const CalibradorDeNeumaticos = () => {
         <div className={styles.controlImageWrapper}>
           <Image
             src={
-              "/images/integraciones/vigia/calibrador-de-neumaticos/calibrador.png"
+              "/images/integraciones/vigia/calibrador-de-neumaticos/calibrador.jpg"
             }
-            width={419}
-            height={419}
+            quality={100}
+            width={1250}
+            height={1250}
             alt=""
           />
         </div>

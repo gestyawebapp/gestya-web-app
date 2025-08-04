@@ -42,7 +42,6 @@ const ConstructionSection = () => {
             <div>Mantenimiento</div>
             <div>Localización</div>
             <div>Reportes</div>
-            <div>VIGIA</div>
           </div>
         </div>
       </div>

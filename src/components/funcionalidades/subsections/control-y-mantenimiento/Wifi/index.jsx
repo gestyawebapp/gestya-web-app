@@ -18,7 +18,7 @@ const Wifi = () => {
             alt=""
           />
           <h2 className={styles.title}>
-            <span>GESTYA</span> Wifi
+            <span>GESTYA</span> WIFI
           </h2>
           <h3 className={styles.subtitle}>Transmisión de datos asegurada</h3>
           <p className={styles.text}>
@@ -55,14 +55,14 @@ const Wifi = () => {
           <p className={styles.text}>
             GESTYA WIFI asegura que todos los vehículos o máquinas que operan en
             áreas de trabajo remotas puedan transmitir datos a través una red
-            Wifi, incluso cuando no hay cobertura GPRS.
+            WIFI, incluso cuando no hay cobertura GPRS.
           </p>
         </div>
       </section>
       <section className={styles.section}>
         <div className={styles.container}>
           <h3 className={styles.subtitle}>
-            GESTYA Wifi garantiza los reportes
+            GESTYA WIFI garantiza los reportes
           </h3>
           <div className={styles.item}>
             <Image
@@ -123,10 +123,10 @@ const Wifi = () => {
           </div>
         </div>
         <div className={styles.container}>
-          <h3 className={styles.subtitle}>¿Cómo funciona GESTYA Wifi?</h3>
+          <h3 className={styles.subtitle}>¿Cómo funciona GESTYA WIFI?</h3>
           <p className={styles.text}>
             Si el vehículo se encuentra fuera del rango de cobertura, ya sea por
-            falta de señal celular o desconexión de la red WiFi configurada, los
+            falta de señal celular o desconexión de la red WIFI configurada, los
             datos recolectados durante ese periodo no se pierden: se almacenan
             de forma segura y se transmiten automáticamente en cuanto se
             restablezca la conexión.

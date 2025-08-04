@@ -60,9 +60,9 @@ const MonitorDePresion = () => {
       <section className={styles.section}>
         <div className={styles.controlImageWrapper}>
           <Image
-            src={"/images/integraciones/vitran/eco-drive/monitoreo.png"}
-            width={419}
-            height={419}
+            src={"/images/integraciones/vitran/eco-drive/monitoreo.jpg"}
+            width={1250}
+            height={1250}
             alt=""
           />
         </div>

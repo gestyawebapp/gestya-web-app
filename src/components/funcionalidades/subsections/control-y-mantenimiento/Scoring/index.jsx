@@ -87,7 +87,7 @@ const Scoring = () => {
               alt=""
             />
             <span>
-              Gestioná con información de planes de prevención de accidentres de
+              Gestioná con información de planes de prevención de accidentes de
               tránsito.
             </span>
           </div>
@@ -122,7 +122,7 @@ const Scoring = () => {
             />
             <span>
               Nivel 2: Infracciones de aceleración, frenadas, aceleración en
-              cruvas y desconexión del sistema.
+              curvas y desconexión del sistema.
             </span>
           </div>
           <div className={styles.item}>

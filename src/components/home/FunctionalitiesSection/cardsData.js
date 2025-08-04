@@ -10,19 +10,11 @@ export const vehicleCards = [
   {
     title: "Logística",
     description:
-      "Observá desde un solo reporte el recorrido, la graficación y los viajes de cada vehículo con información precisa.",
+      "Observá desde un solo reporte el recorrido, la graficación y los viajes de cada vehículo con información precisa",
     href: "/funcionalidades/seguimiento-de-vehiculos/logistica",
     img: "/images/home/logistica.jpg",
     alt: "",
   },
-  // {
-  //   title: "Distancia recorrida",
-  //   description:
-  //     "Revisá en gráficos los vehículos recorrieron más kilómetros y el consumo de combustible estimado por unidad",
-  //   href: "/",
-  //   img: "/images/home/distancia-recorrida.jpg",
-  //   alt: "",
-  // },
   {
     title: "Planificación",
     description:
@@ -51,7 +43,7 @@ export const fuelCards = [
     alt: "",
   },
   {
-    title: "Cargas de combustible",
+    title: "Cargas de Combustible",
     description:
       "Verificá con precisión las cargas de combustible y revisá la compatibilidad de las cargas con el recorrido",
     href: "/funcionalidades/ahorro-de-combustible/cargas-de-combustible",
@@ -62,7 +54,7 @@ export const fuelCards = [
 
 export const controlCards = [
   {
-    title: "Horas de marcha",
+    title: "Horas de Marcha",
     description:
       "Mirá el detalle del tiempo en que el motor estuvo encendido en movimiento o encendido sin estar en movimiento (ralentí)",
     href: "/funcionalidades/control-y-mantenimiento/horas-de-marcha",

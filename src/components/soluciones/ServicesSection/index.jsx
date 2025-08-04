@@ -38,7 +38,7 @@ const ServicesSection = () => {
           el cumplimiento de tareas, verificar la seguridad y el consumo de
           combustible.
         </p>
-        <p>Garantizá que la flota esté operativa</p>
+        <p>Garantizá que la flota esté operativa.</p>
         <p>
           Con GESTYA los supervisores pueden visualizar cada unidad y seguir su
           ubicación en tiempo real.{" "}

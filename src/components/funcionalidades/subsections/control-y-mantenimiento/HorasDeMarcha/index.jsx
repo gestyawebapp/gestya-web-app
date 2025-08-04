@@ -48,10 +48,10 @@ const HorasDeMarcha = () => {
             <span>Supervisá</span> las alertas de forma eficiente
           </h2>
           <p className={styles.text}>
-            GESTYA Alarmas permite monitorear las alarmas generadas por el
-            sistema y configurar notificaciones personalizadas para las más
-            relevantes, diferenciando fácilmente entre las que requieren
-            atención inmediata y las resueltas.
+            GESTYA Alarmas permite monitorear alertas generadas por el sistema y
+            configurar notificaciones personalizadas para las más relevantes,
+            diferenciando fácilmente entre las que requieren atención inmediata
+            y las resueltas.
           </p>
         </div>
       </section>
@@ -78,7 +78,7 @@ const HorasDeMarcha = () => {
               height={32}
               alt=""
             />
-            <span>Control sobre tiempo prolongado en ralenti.</span>
+            <span>Control sobre tiempo prolongado en ralentí.</span>
           </div>
           <div className={styles.item}>
             <Image

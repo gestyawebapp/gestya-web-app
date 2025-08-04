@@ -123,7 +123,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Cantidad de frenadas brucas.</span>
+              <span>Cantidad de frenadas bruscas.</span>
             </div>
             <div className={styles.item}>
               <Image
@@ -134,7 +134,7 @@ const EcoDrive = () => {
                 height={32}
                 alt=""
               />
-              <span>Tiempo del motor en marcha en ralenti.</span>
+              <span>Tiempo del motor en marcha en ralentí.</span>
             </div>
             <div className={styles.item}>
               <Image
