@@ -8,7 +8,7 @@
 }
 
 .link {
-  border: black 1px solid;
+  border: var(--gray-600) 1px solid;
   border-radius: 2rem;
   color: var(--gray-600);
   font-size: var(--font-size-xs);
@@ -17,25 +17,21 @@
   text-align: center;
 }
 
-.link[data-section="vigia"] {
-  background-color: #ffffea;
-  border-color: var(--yellow-900);
-}
-
-.link[data-section="vitran"] {
-  border-color: var(--green-300);
-}
-
-.link.active {
+.link[data-section="vigia"]:not(.active):hover {
+  background-color: var(--yellow-100);
   color: #000;
 }
 
 .link[data-section="vigia"].active {
   background-color: var(--yellow-900);
+  color: #000;
+  border-color: var(--yellow-900);
 }
 
 .link[data-section="vitran"].active {
   background-color: var(--green-300);
+  border-color: var(--green-300);
+  color: #000;
 }
 
 @media (min-width: 576px) {

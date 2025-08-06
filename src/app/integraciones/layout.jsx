@@ -1,7 +1,7 @@
 "use client";
 
-import { Combustible } from "@/components/icons/Combustible";
-import { Seguimiento } from "@/components/icons/Seguimiento";
+import { Vitran } from "@/components/icons/Vitran";
+import { Rueda } from "@/components/icons/Rueda";
 import { usePathname } from "next/navigation";
 import styles from "./styles.module.css";
 import Link from "next/link";
@@ -21,7 +21,7 @@ const IntegracionesLayout = ({ children }) => {
             pathname.startsWith(`/integraciones/vigia`) ? styles.active : ""
           }`}
         >
-          <Seguimiento
+          <Rueda
             size={36}
             filled
             fill={
@@ -36,7 +36,7 @@ const IntegracionesLayout = ({ children }) => {
             pathname.startsWith(`/integraciones/vitran`) ? styles.active : ""
           }`}
         >
-          <Combustible
+          <Vitran
             size={36}
             filled
             fill={

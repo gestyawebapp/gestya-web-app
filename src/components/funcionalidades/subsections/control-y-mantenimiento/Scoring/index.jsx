@@ -22,7 +22,7 @@ const Scoring = () => {
           </h2>
           <h3 className={styles.subtitle}>Conducción segura de la Flota</h3>
           <p className={styles.text}>
-            GESTYA Scoring reune información sobre los hábitos de conducción
+            GESTYA Scoring reúne información sobre los hábitos de conducción
             para tomar decisiones en base a datos y prevenir riesgos.
           </p>
         </div>
@@ -50,7 +50,7 @@ const Scoring = () => {
         </div>
         <div className={styles.header}>
           <h2 className={styles.title}>
-            <span>Evaluá el riesgo</span> y tomá decisiones estrategicas
+            <span>Evaluá el riesgo</span> y tomá decisiones estratégicas
           </h2>
           <p className={styles.text}>
             GESTYA Scoring permite evaluar y calificar el comportamiento de
@@ -64,7 +64,7 @@ const Scoring = () => {
           <h3 className={styles.subtitle}>Scoring para conductores</h3>
           <p className={styles.text}>
             GESTYA Scoring procesa y clasifica información acerca de la conducta
-            de manejo y devuelve un punteja de cada uno de los conductores.{" "}
+            de manejo y devuelve un puntaje de cada uno de los conductores.{" "}
           </p>
           <div className={styles.item}>
             <Image

@@ -48,7 +48,7 @@ const HorasDeMarcha = () => {
             <span>Supervisá</span> las alertas de forma eficiente
           </h2>
           <p className={styles.text}>
-            GESTYA Alarmas permite monitorear alertas generadas por el sistema y
+            GESTYA permite monitorear alertas generadas por el sistema y
             configurar notificaciones personalizadas para las más relevantes,
             diferenciando fácilmente entre las que requieren atención inmediata
             y las resueltas.
@@ -152,7 +152,7 @@ const HorasDeMarcha = () => {
               ¿Por qué evitar el ralentí prolongado?
             </h3>
             <p className={styles.questionText}>
-              El ralenti es cuando el motor permanece encendido sin que el
+              El ralentí es cuando el motor permanece encendido sin que el
               vehículo se desplace, por ejemplo, al esperar con el motor en
               marcha. Este hábito genera consecuencias importantes en el
               mantenimiento de la flota y el consumo de combustible.{" "}
@@ -173,9 +173,9 @@ const HorasDeMarcha = () => {
               ¿Cómo GESTYA ayuda a detectar el ralentí?
             </h3>
             <p className={styles.questionText}>
-              El ralenti es común en situciones como la espera durante cargas o
+              El ralentí es común en situaciones como la espera durante cargas o
               cuando un vehículo permanece detenido en el tráfico. GESTYA
-              permite entender dónde y cuándo suceden estas situciaciones para
+              permite entender dónde y cuándo suceden estas situaciones para
               corregirlas y ahorrar combustible. Esta información es útil para
               capacitar a los conductores y tomar medidas concretas para reducir
               las ineficiencias.

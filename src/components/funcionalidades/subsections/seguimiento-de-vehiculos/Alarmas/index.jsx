@@ -9,23 +9,13 @@ const Alarmas = () => {
     <>
       <section className={styles.section}>
         <div className={styles.header}>
-          <Image
-            src={
-              "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/gestya-alarmas.png"
-            }
-            width={218}
-            height={100}
-            alt=""
-          />
           <h2 className={styles.title}>
             <span>Alertas</span> de la plataforma
           </h2>
           <h3 className={styles.subtitle}>Alarmas/Alertas del Sistema</h3>
           <p className={styles.text}>
-            La plataforma GESTYA genera notificaciones automáticas en función de
-            eventos o configuraciones personalizadas. Permite recibir
-            notificaciones push en tiempo real en función de eventos o
-            configuraciones personalizadas.
+            La plataforma GESTYA envía notificaciones automáticas y en tiempo
+            real basadas en eventos o configuraciones personalizadas.
           </p>
         </div>
         <div className={styles.heroImageWrapper}>
@@ -51,6 +41,14 @@ const Alarmas = () => {
           />
         </div>
         <div className={styles.header}>
+          <Image
+            src={
+              "/images/funcionalidades/seguimiento-de-vehiculos/alarmas/gestya-alarmas.png"
+            }
+            width={218}
+            height={100}
+            alt=""
+          />
           <h2 className={styles.title}>
             <span>Visualizá</span> todas las alertas generadas por los vehículos
           </h2>

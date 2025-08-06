@@ -126,8 +126,7 @@ const CargasDeCombustible = () => {
                 alt=""
               />
               <span>
-                Compará el consumo estimado en un período determinado de 30
-                días.
+                Compará el consumo estimado de combustible en un período determinado de 30 días.
               </span>
             </div>
             <div className={styles.item}>
