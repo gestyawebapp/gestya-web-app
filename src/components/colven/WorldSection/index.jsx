@@ -21,8 +21,8 @@ const WorldSection = () => {
             Con una trayectoria de más de 50 años, el Grupo COLVEN cuenta con
             una planta industrial en el mismo pueblo donde se fundó la empresa.
             Esto permitió fomentar el compromiso de los colaboradores, mejorar
-            los procesos desarrollo y comenzar un proceso de expansión que hoy
-            encuentra a{" "}
+            los procesos de desarrollo y comenzar un proceso de expansión que
+            hoy encuentra a{" "}
             <span>
               COLVEN con presencia en Brasil, México, Estados Unidos, España e
               Italia.

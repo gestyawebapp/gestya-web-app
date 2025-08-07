@@ -123,7 +123,7 @@ const NavbarDesktop = () => {
                 <li>
                   <Link href="/funcionalidades/control-y-mantenimiento/wifi">
                     <h4>Control y Mantenimiento</h4>
-                    <span>Wifi</span>
+                    <span>WIFI</span>
                   </Link>
                 </li>
               </ul>

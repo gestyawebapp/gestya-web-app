@@ -61,7 +61,7 @@ const Alarmas = () => {
             <li>Ingreso o egreso de zonas geográficas</li>
             <li>
               Eventos configurados por el cliente o por el centro de atención
-              Gestya
+              GESTYA
             </li>
           </ul>
           <p className={styles.text}>

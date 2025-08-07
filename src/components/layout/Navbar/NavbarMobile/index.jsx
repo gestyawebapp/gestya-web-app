@@ -228,7 +228,7 @@ const NavbarMobile = () => {
                   >
                     <h4>Control y Mantenimiento</h4>
                     <ArrowRight size={20} />
-                    <span>Wifi</span>
+                    <span>WIFI</span>
                   </Link>
                 </li>
               </ul>

@@ -18,7 +18,7 @@ const allFuncionalidadesSubsections = {
   "control-y-mantenimiento": [
     { label: "Horas de Marcha", path: "horas-de-marcha" },
     { label: "Scoring", path: "scoring" },
-    { label: "Wifi", path: "wifi" },
+    { label: "WIFI", path: "wifi" },
   ],
 };
 
